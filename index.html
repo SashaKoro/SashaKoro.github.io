@@ -1,19 +1,345 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
+		<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 		<meta charset="utf-8">
 		<title>Here!</title>
+		<style type="text/css">
+
+			.page {
+				min-height: 100%;
+				position: relative;
+				max-width: 1160px;
+			}
+			
+			#header {
+				background-color: #555F61;
+				height: 75px;
+				margin: -10px 0 0 0;
+				text-align: right;
+			}
+
+			#logo {
+				/*background-color: red;*/
+				margin-left: 80px;
+				margin-bottom: -30px;
+				margin-top: 10px;
+				height: 8px;
+				width: 10px;
+				background-color: #BCA136;
+				border-top: 35px solid #1496BB;
+				border-right: 30px solid #F26D21; 
+				border-left: 30px solid #F26D21;
+				border-bottom: 45px solid transparent;
+			}
+
+			.headerButtons {
+				margin-right: 9px;
+				height: 40px;
+				width: 120px;
+				max-width: 120px;
+				margin-top: -50px;
+				font-family: Arial;
+				font-size: 19px;
+				color: #2B2B2B;
+				border: 1px solid black;
+				background-color: #43ABC9;
+				transition-duration: 0.6s;
+				-webkit-transition-duration: 0.6s;
+			}
+
+			.headerButtons:hover {
+				background-color: white;
+			}
+
+			#secondHeader {
+				height: 30px;
+				background-color: #555F61;
+				margin-top: -18px;
+			}
+
+			#about {
+
+				margin-top: 23px;
+				padding-top: 50px;
+				padding-bottom: 50px;
+				background-color: white;
+				height: 100%;
+				color: #555F61;
+			}
+
+			#projects {
+
+				margin-top: 23px;
+				padding-top: 50px;
+				background-color: #6A88EA;
+				padding-bottom: 117px;
+				height: 100%;
+				color:black;
+			}
+
+			#contact {
+
+				margin-top: 23px;
+				padding-top: 50px;
+				padding-bottom: 279px;
+				background-color: #6A88EA;
+				height: 100%;
+				color:black;
+			}
+
+			.toggled:not(#about) {
+    			display: none;
+			}
+
+			.toggled {
+				font-family: arial;
+				font-size: 20px;
+			}
+
+			#self {
+				float: right;
+				margin-right: 110px;
+				padding-left: 30px;
+
+			}
+
+			#introHeader {
+				margin-left: 50px;
+				padding-bottom: 40px;
+			}
+
+			#introParagraph {
+				margin-left: 50px;
+				margin-right: 33%;
+				margin-bottom: 60px;
+			}
+
+			#skillList {
+				margin-left: 70px;
+			}
+
+			li {
+   				margin:0 0 20px 0;   
+			}
+
+			* {
+  				margin: 0;
+			}
+			html, body {
+  				height: 100%;
+			}
+			.page-wrap {
+  				min-height: 100%;
+  				margin-bottom: -90px; 
+			}
+			.page-wrap:after {
+  				content: "";
+  				display: block;
+			}
+			.site-footer, .page-wrap:after {
+  				height: 90px; 
+			}
+			.site-footer {
+  				background: #555F61;
+			}
+
+			#projectHeader {
+				text-align: center;
+				padding-bottom: 100px;
+			}
+
+			.fa-calculator {
+				font-size: 230px;
+				margin-left: 120px;
+			}
+
+			#iconRow {
+				padding-bottom: 50px;
+			}
+
+			#calcLink {
+				margin-left: 120px;
+				color: black;
+				text-decoration: none;
+			}
+
+			#calcLink:hover {
+				text-decoration: underline;
+				color: #373D3F;
+			}
+
+			#contactHeader {
+				text-align: center;
+				padding-bottom: 100px;
+			}
+
+			#contactList {
+				display: inline-block;
+				list-style-type: none;
+			}
+
+			#contactListDiv {
+				text-align: center;
+			}
+
+			#mailRow {
+				text-align: left;
+			}
+
+			#linkRow {
+				text-align: left;
+			}
+
+			#githubRow {
+				text-align: left;
+			}
+
+			.contactLinks {
+				color: black;
+				text-decoration: none;
+			}
+
+			.contactLinks:hover {
+				text-decoration: underline;
+				color: #373D3F;
+			}
+
+			#blog {
+				padding-left: 300px;
+				padding-right: 300px;
+				font-size: 25px;
+				padding-bottom: 75px;
+				margin-top: 23px;
+				padding-top: 50px;
+				background-color: white;
+				height: 100%;
+				color: #555F61;
+			}	
+
+			p:first-letter {
+    			margin-left: 3em;
+			}	
+
+			p {
+				line-height: 140%;
+			}
+
+			#blogHeader {
+				text-align: center;
+				padding-top: 75px;
+			}
+
+			#blogDate {
+				padding-top: 90px;
+				padding-bottom: 25px;
+			}
+
+
+		</style>
 	</head>
 <body>
 
-<h1>My Website (in construction)</h1>
+<div class="page-wrap">
+	<div id="header">
+		<div id="logo"></div>
+		<button class="headerButtons" data-toggle="#about" id="AboutButton">About</button>
+		<button class="headerButtons" data-toggle="#blog" id="BlogButton">Blog</button>
+		<button class="headerButtons" data-toggle="#projects" id="ProjectsButton">Projects</button>
+		<button class="headerButtons" data-toggle="#contact" id="ContactButton">Contact</button>
+		<div id="secondHeader"></div> 
+	</div>
+	<div class="toggled" id="about">	
+		<figure id="self">
+  			<img src="images/IMG_0855.jpg" alt="A photo of me" title="Visiting the Abbey of Gethsemani"/>
+  		<figcaption></figcaption>
+  		</figure>
+  		<h1 id="introHeader">Alexandre Korotkov (Sasha)</h1>
+		<p id="introParagraph">Hello. My name is Alexandre Korotkov, but everyone calls me Sasha, which in Russia (where I'm from) is short for Alexander. You might have noticed the way is spell my name is a bit different, that is because when my name was being transcribed from Russian to English during immigration, the French form (Alexandre) was what ended up getting used. No biggie, I like it just the same. Wait, I had a point here... oh yes: </p>
+		<ul id="skillList">
+			<li>Relentless desire to learn and grow</li>
+			<li>Javascript, Python, HTML, CSS, Jquery, Unit testing ...so far</li>
+			<li>Whatever technologies I do not know, I will.</li>
+			<li>Natural aptitude in accounting for every variable and situation</li>
+			<li>Started learning programming in September of 2016, uncharted potential</li>		
+		</ul>
+	</div>
+	<div class="toggled" id="blog">
+		<h1 id="blogHeader">Welcome to my blog!</h1>
+		<h3 id="blogDate">November 11, 2016</h3>
+		<p>Hello website visitors! Let this be my first blog post. Ever. I’ve decided to create this blog to document my programming journey. I began teaching myself programming on September 20, 2016. So I’m almost two months in at this point and I am having a great time. My only past experience with programming was an intro course back in 2014 when I was attending community college. I had a lot of other things on my mind at the time and as a result, the course made no impression on me whatsoever. Then I moved to Cincinnati on September 7th and I found myself with a strong sense of motivation, I was no longer living with my parents and working in another entry level job was not going to cut it. I wanted a career. I wanted to be intellectually challenged at work and have the opportunity to grow without limits. As I started researching careers I stumbled onto programming, and as I learned more and more about the field, I realized that this is what I was looking for all along. Freely shared knowledge. The ability to work and contribute from anywhere and anytime. An outlet for almost limitless creative expression. A field that eagerly embraces newcomers. A community that wants to better the world. …Oh, and the pay isn’t bad either!</p><br><p>For the first 4 weeks I studied part time as I was still working, but I decided to quit my part time job on October 24th and focus 100% on studying. It was a strategic decision, I was working at a warehouse and the only thing I was earning there was money. I was not learning, I was not growing, I was only getting a paycheck. So the past 3 weeks of studying full time have been excellent. I have managed to put in 54 and 55 hours during the first two ‘full-time’ weeks respectively and this week, I am on track for 60! I never could have imagined myself devoting so much time to one thing and enjoying it so much. With some encouragement I have created my first project, the calculator/frankulator you can find on this website. I had so much fun creating it, that I knew this was the way to learn. Learn by doing, learn by building. And now I have created this website from scratch, a place to document my progress, my blog and my projects. My goal for learning is to continue doing things that I think I cannot do. I did not think I was capable of building the calculator, but I did it. Now my next project will be even more ambitious, I will create a complete end-to-end application and launch it. I want to cover all my bases; the planning, the design, security, accessibility, server stuff, support. I want to cover the things that I do not even know will need to be covered. If I need to learn new technologies in creating this, I will learn them. New tools, I will use them. I’m starting today after I finish writing up this blog and committing this website. I will update and post my progress on this blog and on github.</p><br><p>Oh yeah, If you are in Cincinnati - I will be launching a paired programming meetup in December. There are tons of tech meetups in Cincinnati and they are great, but they are mostly focused on tech presentations and on networking. I want to create a meetup where people are empowered to work side by side on a problem and gain the critical skill of teamwork that is so important for modern programming. Feel free to reach out if you have any questions, I am happy to respond and help guide beginners who are also starting their coding journey. Till next time!</p>
+	</div>
+	<div class="toggled" id="projects">
+		<h1 id="projectHeader">Here are some of the cool things I've built</h1>
+		<div id="iconRow">
+			<i class="fa fa-calculator"></i>
+		</div>
+		<div>
+			<a id="calcLink" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
+		</div>
+	</div>
+	<div class="toggled" id="contact">
+		<h1 id="contactHeader">Reach out!</h1>
+		<div id="contactListDiv">
+		<ul id= "contactList">
+			<li id="mailRow">
+				<i class="material-icons">&#xe0be;</i>
+				<a class="contactLinks" href="mailto:balaskorotkov@gmailcom">Email</a>
+			</li>
+			<li id="linkRow">
+				<i style="font-size:24px" class="fa">&#xf08c;</i>
+				<a class="contactLinks" href="https://www.linkedin.com/in/alexandre-korotkov-bb492b129">Linkedin</a>
+			</li>
+			<li id="githubRow">
+				<i style="font-size:24px" class="fa">&#xf09b;</i>
+				<a class="contactLinks" href="https://github.com/SashaKoro">GitHub</a>
+			</li>
+		</ul>
+		</div>
+	</div>
 
 
-<p>My projects</p>
-<a href="https://sashakoro.github.io/calculator/">Calculator/Frankulator project</a>
+</div>
 
+	<div class="site-footer">
+    	<p></p>
+	</div>
+
+
+
+
+
+    <script src="jsback.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+
+
+ 	$("[data-toggle]").on("click", function(e) {
+  	e.preventDefault();  
+  	var selector = $(this).data("toggle"); 
+  	$(".toggled").hide();
+  	$(selector).show();
+	});
+
+    </script>
 
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
