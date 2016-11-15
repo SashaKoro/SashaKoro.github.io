@@ -13,128 +13,102 @@
 		<title>Here!</title>
 		<style type="text/css">
 
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			button:focus {
+				outline-color: black;
+				outline-style: solid;
+				outline-width: 2px;
+				transition-duration: 0s;
+				-webkit-transition-duration: 0s;
+				background-color: #1287A8;
+			}
 			.page {
 				min-height: 100%;
 				position: relative;
 				max-width: 1160px;
 			}
-			
 			#header {
 				background-color: #555F61;
-				height: 75px;
-				margin: -10px 0 0 0;
-				text-align: right;
-			}
+				height: 100px;
+				position: fixed;
+				width: 100%;
 
+			}
 			#logo {
-				/*background-color: red;*/
 				margin-left: 80px;
-				margin-bottom: -30px;
-				margin-top: 10px;
-				height: 8px;
-				width: 10px;
+				margin-right: 60%;
 				background-color: #BCA136;
-				border-top: 35px solid #1496BB;
+				padding-right: 12px;
+				border-top: 30px solid #1496BB;
 				border-right: 30px solid #F26D21; 
 				border-left: 30px solid #F26D21;
-				border-bottom: 45px solid transparent;
+				border-bottom: 15px solid transparent;
 			}
-
 			.headerButtons {
+				margin-top: 45px;
 				margin-right: 9px;
 				height: 40px;
 				width: 120px;
 				max-width: 120px;
-				margin-top: -50px;
 				font-family: Arial;
 				font-size: 19px;
-				color: #2B2B2B;
+				color: black;
 				border: 1px solid black;
 				background-color: #43ABC9;
 				transition-duration: 0.6s;
 				-webkit-transition-duration: 0.6s;
 			}
-
 			.headerButtons:hover {
 				background-color: white;
 			}
-
-			#secondHeader {
-				height: 30px;
-				background-color: #555F61;
-				margin-top: -18px;
-			}
-
 			#about {
-
-				margin-top: 23px;
-				padding-top: 50px;
-				padding-bottom: 50px;
+				padding-top: 150px;
+				padding-bottom: 63px;
 				background-color: white;
 				height: 100%;
 				color: #555F61;
 			}
-
 			#projects {
 
-				margin-top: 23px;
-				padding-top: 50px;
+				padding-top: 150px;
 				background-color: #6A88EA;
-				padding-bottom: 117px;
+				padding-bottom: 115px;
 				height: 100%;
 				color:black;
 			}
-
-			#contact {
-
-				margin-top: 23px;
-				padding-top: 50px;
-				padding-bottom: 279px;
-				background-color: #6A88EA;
-				height: 100%;
-				color:black;
-			}
-
 			.toggled:not(#about) {
     			display: none;
 			}
-
 			.toggled {
 				font-family: arial;
 				font-size: 20px;
 			}
-
 			#self {
 				float: right;
 				margin-right: 110px;
 				padding-left: 30px;
 
 			}
-
 			#introHeader {
 				margin-left: 50px;
 				padding-bottom: 40px;
 			}
-
 			#introParagraph {
 				margin-left: 50px;
 				margin-right: 33%;
 				margin-bottom: 60px;
 			}
-
 			#skillList {
 				margin-left: 70px;
 			}
-
 			li {
    				margin:0 0 20px 0;   
 			}
-
 			* {
   				margin: 0;
-			}
-			html, body {
-  				height: 100%;
 			}
 			.page-wrap {
   				min-height: 100%;
@@ -150,96 +124,67 @@
 			.site-footer {
   				background: #555F61;
 			}
-
 			#projectHeader {
 				text-align: center;
 				padding-bottom: 100px;
 			}
-
 			.fa-calculator {
 				font-size: 230px;
 				margin-left: 120px;
 			}
-
 			#iconRow {
 				padding-bottom: 50px;
 			}
-
 			#calcLink {
 				margin-left: 120px;
 				color: black;
 				text-decoration: none;
 			}
-
 			#calcLink:hover {
 				text-decoration: underline;
 				color: #373D3F;
 			}
-
-			#contactHeader {
-				text-align: center;
-				padding-bottom: 100px;
-			}
-
-			#contactList {
-				display: inline-block;
-				list-style-type: none;
-			}
-
 			#contactListDiv {
 				text-align: center;
+				padding-top: 27px;
 			}
-
-			#mailRow {
-				text-align: left;
-			}
-
-			#linkRow {
-				text-align: left;
-			}
-
-			#githubRow {
-				text-align: left;
-			}
-
 			.contactLinks {
 				color: black;
-				text-decoration: none;
 			}
-
 			.contactLinks:hover {
-				text-decoration: underline;
-				color: #373D3F;
+				color: #202020;
 			}
-
+			.contactLinks:focus {
+				outline-color: black;
+				outline-style: solid;
+				outline-width: 2px;
+			}
 			#blog {
 				padding-left: 300px;
 				padding-right: 300px;
 				font-size: 25px;
 				padding-bottom: 75px;
-				margin-top: 23px;
-				padding-top: 50px;
+				padding-top: 140px;
 				background-color: white;
 				height: 100%;
 				color: #555F61;
 			}	
-
 			p:first-letter {
     			margin-left: 3em;
 			}	
-
 			p {
 				line-height: 140%;
 			}
-
 			#blogHeader {
 				text-align: center;
 				padding-top: 75px;
 			}
-
 			#blogDate {
-				padding-top: 90px;
+				padding-top: 105px;
 				padding-bottom: 25px;
+			}
+			#midLink {
+				margin: 0 10px 0 10px;
 			}
 
 
@@ -249,12 +194,10 @@
 
 <div class="page-wrap">
 	<div id="header">
-		<div id="logo"></div>
+		<span id="logo"></span>
 		<button class="headerButtons" data-toggle="#about" id="AboutButton">About</button>
-		<button class="headerButtons" data-toggle="#blog" id="BlogButton">Blog</button>
 		<button class="headerButtons" data-toggle="#projects" id="ProjectsButton">Projects</button>
-		<button class="headerButtons" data-toggle="#contact" id="ContactButton">Contact</button>
-		<div id="secondHeader"></div> 
+		<button class="headerButtons" data-toggle="#blog" id="BlogButton">Blog</button>
 	</div>
 	<div class="toggled" id="about">	
 		<figure id="self">
@@ -262,7 +205,7 @@
   		<figcaption></figcaption>
   		</figure>
   		<h1 id="introHeader">Alexandre Korotkov (Sasha)</h1>
-		<p id="introParagraph">Hello. My name is Alexandre Korotkov, but everyone calls me Sasha, which in Russia (where I'm from) is short for Alexander. You might have noticed the way is spell my name is a bit different, that is because when my name was being transcribed from Russian to English during immigration, the French form (Alexandre) was what ended up getting used. No biggie, I like it just the same. Wait, I had a point here... oh yes: </p>
+		<p id="introParagraph">Hello. My name is Alexandre Korotkov, but everyone calls me Sasha, which in Russia (where I'm from) is short for Alexander. You might have noticed the way I spell my name is a bit different, that is because when my name was being transcribed from Russian to English during immigration, the French form (Alexandre) was what ended up getting used. No biggie, I like it just the same. Wait, I had a point here... oh yes: </p>
 		<ul id="skillList">
 			<li>Relentless desire to learn and grow</li>
 			<li>Javascript, Python, HTML, CSS, Jquery, Unit testing ...so far</li>
@@ -270,11 +213,6 @@
 			<li>Natural aptitude in accounting for every variable and situation</li>
 			<li>Started learning programming in September of 2016, uncharted potential</li>		
 		</ul>
-	</div>
-	<div class="toggled" id="blog">
-		<h1 id="blogHeader">Welcome to my blog!</h1>
-		<h3 id="blogDate">November 11, 2016</h3>
-		<p>Hello website visitors! Let this be my first blog post. Ever. I’ve decided to create this blog to document my programming journey. I began teaching myself programming on September 20, 2016. So I’m almost two months in at this point and I am having a great time. My only past experience with programming was an intro course back in 2014 when I was attending community college. I had a lot of other things on my mind at the time and as a result, the course made no impression on me whatsoever. Then I moved to Cincinnati on September 7th and I found myself with a strong sense of motivation, I was no longer living with my parents and working in another entry level job was not going to cut it. I wanted a career. I wanted to be intellectually challenged at work and have the opportunity to grow without limits. As I started researching careers I stumbled onto programming, and as I learned more and more about the field, I realized that this is what I was looking for all along. Freely shared knowledge. The ability to work and contribute from anywhere and anytime. An outlet for almost limitless creative expression. A field that eagerly embraces newcomers. A community that wants to better the world. …Oh, and the pay isn’t bad either!</p><br><p>For the first 4 weeks I studied part time as I was still working, but I decided to quit my part time job on October 24th and focus 100% on studying. It was a strategic decision, I was working at a warehouse and the only thing I was earning there was money. I was not learning, I was not growing, I was only getting a paycheck. So the past 3 weeks of studying full time have been excellent. I have managed to put in 54 and 55 hours during the first two ‘full-time’ weeks respectively and this week, I am on track for 60! I never could have imagined myself devoting so much time to one thing and enjoying it so much. With some encouragement I have created my first project, the calculator/frankulator you can find on this website. I had so much fun creating it, that I knew this was the way to learn. Learn by doing, learn by building. And now I have created this website from scratch, a place to document my progress, my blog and my projects. My goal for learning is to continue doing things that I think I cannot do. I did not think I was capable of building the calculator, but I did it. Now my next project will be even more ambitious, I will create a complete end-to-end application and launch it. I want to cover all my bases; the planning, the design, security, accessibility, server stuff, support. I want to cover the things that I do not even know will need to be covered. If I need to learn new technologies in creating this, I will learn them. New tools, I will use them. I’m starting today after I finish writing up this blog and committing this website. I will update and post my progress on this blog and on github.</p><br><p>Oh yeah, If you are in Cincinnati - I will be launching a paired programming meetup in December. There are tons of tech meetups in Cincinnati and they are great, but they are mostly focused on tech presentations and on networking. I want to create a meetup where people are empowered to work side by side on a problem and gain the critical skill of teamwork that is so important for modern programming. Feel free to reach out if you have any questions, I am happy to respond and help guide beginners who are also starting their coding journey. Till next time!</p>
 	</div>
 	<div class="toggled" id="projects">
 		<h1 id="projectHeader">Here are some of the cool things I've built</h1>
@@ -285,43 +223,30 @@
 			<a id="calcLink" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
 		</div>
 	</div>
-	<div class="toggled" id="contact">
-		<h1 id="contactHeader">Reach out!</h1>
-		<div id="contactListDiv">
-		<ul id= "contactList">
-			<li id="mailRow">
-				<i class="material-icons">&#xe0be;</i>
-				<a class="contactLinks" href="mailto:balaskorotkov@gmailcom">Email</a>
-			</li>
-			<li id="linkRow">
-				<i style="font-size:24px" class="fa">&#xf08c;</i>
-				<a class="contactLinks" href="https://www.linkedin.com/in/alexandre-korotkov-bb492b129">Linkedin</a>
-			</li>
-			<li id="githubRow">
-				<i style="font-size:24px" class="fa">&#xf09b;</i>
-				<a class="contactLinks" href="https://github.com/SashaKoro">GitHub</a>
-			</li>
-		</ul>
-		</div>
+		<div class="toggled" id="blog">
+		<h1 id="blogHeader">Welcome to my blog!</h1>
+		<h3 id="blogDate">November 14, 2016</h3>
+		<p>Welcome to my second blog post! I would like to update you all on what I have done so far. I have come up with an idea for my end-to-end application. I want to create a movie quote game. The game at its core is relatively simple, the user is shown a quote from a movie and they have to guess what movie the quote is from. Time and score will be kept track of, as well as different levels of difficulty; expert (multiple-choice), master (hang-man style guessing) and wizard (write-in the answer). Why is this game going to be so difficult? Because I want to use a 200 megabyte file of quotes from the IMDB website. I want to make a crawler that randomly chooses a quote from one of the tens of thousands of quotes in the file to display to the user. This game is designed for huge movie buffs in mind, as the sheer number of movies and quotes that the crawler could choose from would quickly frustrate the average movie-goer. The one hiccup in my project is getting permission from IMDB to crawl their file and make an app out of it that others can use. So far I have emailed IMDB with my request in the hopes that they let me create this project. If that ends up falling through, no fear, I will come up with a different idea!</p><br><p>One of my other ideas is to split up my Frankulator/Calculator project into two distinct beings. On the one hand, the Calculator can stand on its own as a regular, user friendly calculator, while the Frankulator is transformed into an application that outputs ‘fun’ stats on a given number. The user would type in or key in a number into the Frankulator and click the ‘Frankulate’ button. The application would then output a list of stats on the number, such as; is the number prime, how many divisors does it have, is it a Chen prime, etc. There would also be links to Wikipedia articles, informing the user of just what a Chen prime is. I think it would be quite fun and educational. I would also like to start incorporating accessibility into my projects, I want someone who does not use a mouse, to be able to navigate my Calculator with arrow keys, not by just tabbing through. I want to add a sound mode, where the keys of the calculator access the speaker of the computer and a voice (Siri?) can tell the user what keys they are hitting if they wish to do so. I think adding this stuff would be pretty cool and helpful.</p><br><p>I want to take the time to give some advice to others who are teaching themselves how to code. Use a multidisciplinary approach to teaching yourself programming. Podcasts, videos, meetups, tutorials, books, presentations, and many other tools and communities can help you on your way to becoming a software developer. However the best way to learn, is by doing, so you should strive to build your own programs as quickly as possible, no matter how simple or buggy these programs are, this will be a huge motivator for you in ways that other mediums of learning cannot reach.</p><br><p>I also have a secret productivity tip, that so far I have not heard anyone mention. When you get to the point very late in the day, when your brain is fuzzy and you find yourself spacing out, but you still want to squeeze in an extra 30-45 minutes of studying before you go to bed, do this: go to a popular github repository in the coding language that you are learning, and just starting typing out the code in one of the files. Even if you don’t know what the code means, just start typing it out in a separate text document. The first time I tried this, I noticed how weak my muscle-memory knowledge of where the special characters were located on the keyboard was. I was so much more used to typing out essays rather than blocks of code that I found myself typing at a snail’s pace while looking down at my fingers every time I needed a bracket or a semi-colon. I feel this technique is akin to listening to a foreign-language book on tape, even though you do not know any of the words, you are still learning, and in effect, the language of computers is a foreign language to many of us. That’s all for today, see you next time!</p>
+		<h3 id="blogDate">November 11, 2016</h3>
+		<p>Hello website visitors! Let this be my first blog post. Ever. I’ve decided to create this blog to document my programming journey. I began teaching myself programming on September 20, 2016. So I’m almost two months in at this point and I am having a great time. My only past experience with programming was an intro course back in 2014 when I was attending community college. I had a lot of other things on my mind at the time and as a result, the course made no impression on me whatsoever. Then I moved to Cincinnati on September 7th and I found myself with a strong sense of motivation, I was no longer living with my parents and working in another entry level job was not going to cut it. I wanted a career. I wanted to be intellectually challenged at work and have the opportunity to grow without limits. As I started researching careers I stumbled onto programming, and as I learned more and more about the field, I realized that this is what I was looking for all along. Freely shared knowledge. The ability to work and contribute from anywhere and anytime. An outlet for almost limitless creative expression. A field that eagerly embraces newcomers. A community that wants to better the world. …Oh, and the pay isn’t bad either!</p><br><p>For the first 4 weeks I studied part time as I was still working, but I decided to quit my part time job on October 24th and focus 100% on studying. It was a strategic decision, I was working at a warehouse and the only thing I was earning there was money. I was not learning, I was not growing, I was only getting a paycheck. So the past 3 weeks of studying full time have been excellent. I have managed to put in 54 and 55 hours during the first two ‘full-time’ weeks respectively and this week, I am on track for 60! I never could have imagined myself devoting so much time to one thing and enjoying it so much. With some encouragement I have created my first project, the calculator/frankulator you can find on this website. I had so much fun creating it, that I knew this was the way to learn. Learn by doing, learn by building. And now I have created this website from scratch, a place to document my progress, my blog and my projects. My goal for learning is to continue doing things that I think I cannot do. I did not think I was capable of building the calculator, but I did it. Now my next project will be even more ambitious, I will create a complete end-to-end application and launch it. I want to cover all my bases; the planning, the design, security, accessibility, server stuff, support. I want to cover the things that I do not even know will need to be covered. If I need to learn new technologies in creating this, I will learn them. New tools, I will use them. I’m starting today after I finish writing up this blog and committing this website. I will update and post my progress on this blog and on github.</p><br><p>Oh yeah, If you are in Cincinnati - I will be launching a paired programming meetup in December. There are tons of tech meetups in Cincinnati and they are great, but they are mostly focused on tech presentations and on networking. I want to create a meetup where people are empowered to work side by side on a problem and gain the critical skill of teamwork that is so important for modern programming. Feel free to reach out if you have any questions, I am happy to respond and help guide beginners who are also starting their coding journey. Till next time!</p>
 	</div>
-
-
 </div>
 
-	<div class="site-footer">
-    	<p></p>
-	</div>
-
-
-
-
+<div class="site-footer">
+    <p>
+    	<div id="contactListDiv">
+			<a class="contactLinks" href="mailto:balaskorotkov@gmailcom"><i style="font-size:32px" class="fa">&#xf199;</i><a>
+			<a class="contactLinks" id="midLink" href="https://www.linkedin.com/in/alexandre-korotkov-bb492b129"><i style="font-size:32px" class="fa">&#xf08c;</i></a>
+			<a class="contactLinks" href="https://github.com/SashaKoro"><i style="font-size:32px" class="fa">&#xf09b;</i></a>
+		</div>
+    </p>
+</div>
 
     <script src="jsback.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
 
-
- 	$("[data-toggle]").on("click", function(e) {
+	$("[data-toggle]").on("click", function(e) {
   	e.preventDefault();  
   	var selector = $(this).data("toggle"); 
   	$(".toggled").hide();
@@ -330,15 +255,8 @@
 
     </script>
 
-
-
 </body>
 </html>
-
-
-
-
-
 
 
 
