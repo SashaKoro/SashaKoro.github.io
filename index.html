@@ -13,9 +13,16 @@
 		<title>Here!</title>
 		<style type="text/css">
 
+			html {
+				height: 100%;
+				box-sizing: border-box;
+			}
+
 			body {
-				padding: 0;
+				position: relative;
 				margin: 0;
+				padding-bottom: 2rem;
+				min-height: 100%;
 			}
 			button:focus {
 				outline-color: black;
@@ -25,16 +32,20 @@
 				-webkit-transition-duration: 0s;
 				background-color: #1287A8;
 			}
-			.page {
-				min-height: 100%;
-				position: relative;
-				max-width: 1160px;
-			}
 			#header {
 				background-color: #555F61;
 				height: 100px;
 				position: fixed;
 				width: 100%;
+			}
+			.site-footer {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				padding: 1rem;
+  				background: #555F61;
+  				width: 100%;
 
 			}
 			#logo {
@@ -66,18 +77,14 @@
 			}
 			#about {
 				padding-top: 150px;
-				padding-bottom: 63px;
 				background-color: white;
 				height: 100%;
 				color: #555F61;
 			}
 			#projects {
-
 				padding-top: 150px;
-				background-color: #6A88EA;
-				padding-bottom: 115px;
 				height: 100%;
-				color:black;
+				color: #555F61;
 			}
 			.toggled:not(#about) {
     			display: none;
@@ -107,12 +114,14 @@
 			li {
    				margin:0 0 20px 0;   
 			}
-			* {
-  				margin: 0;
+			*,
+			*:before,
+			*:after {
+  				box-sizing: inherit;
 			}
+
 			.page-wrap {
-  				min-height: 100%;
-  				margin-bottom: -90px; 
+				min-height: 100%;
 			}
 			.page-wrap:after {
   				content: "";
@@ -120,9 +129,6 @@
 			}
 			.site-footer, .page-wrap:after {
   				height: 90px; 
-			}
-			.site-footer {
-  				background: #555F61;
 			}
 			#projectHeader {
 				text-align: center;
@@ -132,6 +138,10 @@
 				font-size: 230px;
 				margin-left: 120px;
 			}
+			.fa-id-badge {
+				font-size: 230px;
+				margin-left: 155px;
+			}
 			#iconRow {
 				padding-bottom: 50px;
 			}
@@ -140,13 +150,25 @@
 				color: black;
 				text-decoration: none;
 			}
+			#eulerLink {
+				margin-left: 200px;
+				color: black;
+				text-decoration: none;
+			}
 			#calcLink:hover {
 				text-decoration: underline;
 				color: #373D3F;
 			}
+			#eulerLink:hover {
+				text-decoration: underline;
+				color: #373D3F;
+			}
+			#moto {
+				margin-right: 10px;
+				color: #8E1F1F;
+			}
 			#contactListDiv {
 				text-align: center;
-				padding-top: 27px;
 			}
 			.contactLinks {
 				color: black;
@@ -218,9 +240,11 @@
 		<h1 id="projectHeader">Here are some of the cool things I've built</h1>
 		<div id="iconRow">
 			<i class="fa fa-calculator"></i>
+			<i class="fa fa-id-badge"></i>
 		</div>
-		<div>
+		<div id ="projectLinkRow">
 			<a id="calcLink" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
+			<a id="eulerLink" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
 		</div>
 	</div>
 		<div class="toggled" id="blog">
@@ -232,6 +256,7 @@
 	</div>
 </div>
 
+
 <div class="site-footer">
     <p>
     	<div id="contactListDiv">
@@ -239,6 +264,7 @@
 			<a class="contactLinks" id="midLink" href="https://www.linkedin.com/in/alexandre-korotkov-bb492b129"><i style="font-size:32px" class="fa">&#xf08c;</i></a>
 			<a class="contactLinks" href="https://github.com/SashaKoro"><i style="font-size:32px" class="fa">&#xf09b;</i></a>
 		</div>
+		<i id="moto" style="font-size:19px" class="fa">&#xf21c;</i>
     </p>
 </div>
 
