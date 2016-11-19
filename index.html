@@ -23,6 +23,9 @@
 				margin: 0;
 				padding-bottom: 2rem;
 				min-height: 100%;
+				width: auto;
+    			min-width: 1200px; 
+    			overflow-x:scroll;   
 			}
 			button:focus {
 				outline-color: black;
@@ -142,6 +145,10 @@
 				font-size: 230px;
 				margin-left: 155px;
 			}
+			.fa-gears {
+				font-size: 230px;
+				margin-left: 155px;
+			}
 			#iconRow {
 				padding-bottom: 50px;
 			}
@@ -163,6 +170,27 @@
 				text-decoration: underline;
 				color: #373D3F;
 			}
+			#quoteLink {
+				color: black;
+				text-decoration: none;
+				margin-left: 230px;
+			}
+			#quoteLink:hover {
+				text-decoration: underline;
+				color: #373D3F;
+			}
+			#calcLink:focus {
+				text-decoration: underline;
+				outline-style: none;
+			}
+			#eulerLink:focus {
+				text-decoration: underline;
+				outline-style: none;
+			}
+			#quoteLink:focus {
+				text-decoration: underline;
+				outline-style: none;
+			}			
 			#moto {
 				margin-right: 10px;
 				color: #8E1F1F;
@@ -241,14 +269,18 @@
 		<div id="iconRow">
 			<i class="fa fa-calculator"></i>
 			<i class="fa fa-id-badge"></i>
+			<i class="fa fa-gears"></i>
 		</div>
 		<div id ="projectLinkRow">
 			<a id="calcLink" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
 			<a id="eulerLink" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+			<a id="quoteLink" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
 		</div>
 	</div>
 		<div class="toggled" id="blog">
 		<h1 id="blogHeader">Welcome to my blog!</h1>
+		<h3 id="blogDate">November 18, 2016</h3>
+		<p>Looks like IMDB has not gotten back to me yet regarding my request to crawl their movie quotes file and make a game app out of it. No matter! In the meantime I have created two more web applications which you can find under my ‘projects’ tab on this website. While the tribute page was relatively straight forward to build, the quote machine proved to be a little tricky.  One of the functionalities of the quote machine is the ability to publish the quote onto Twitter. Tweets, however; have a 140 character limit, so I had to remove some of the longer quotes as I wanted end-to-end functionality for every single quote. The biggest issue, however, proved to be aligning the ‘next quote’ button with the ‘tweet’ icon. The ‘tweet’ icon from font-awesome ended up having really strange behavior and sat a couple of pixels higher in my div. Attempts to align the ‘tweet’ icon caused me to realize that the icon was somehow disconnected to its background element (which was a small rectangular box). I eventually decided that it was not a huge issue and aligned the two buttons vertically, which I think looks kind of cool anyway. This vertical alignment and close proximity of the buttons also gives me a stronger urge to click the ‘tweet’ icon while cycling through the quotes. Take note, social media web developers.</p><br><p>I ended up doing some of my first ever paired programming this week. Myself and another aspiring programmer from Slack have got together three times so far and have taken on a variety of coding challenges on Coderbyte. The experience has been pretty awesome and is definitely teaching me quite a few things. First: the combination of voice, pen(marker), and paper(whiteboard) as a tool for explaining ideas, is simply unmatched. The ability to draw diagrams, flow charts and arrows to explain complex ideas is not only powerful but almost mandatory to make sure that everyone is on the same page. Second: The ability to explain your thinking is an important skill. The importance of this skill is probably more than I can even realize at this point in time. As ideas become more complex, the skill necessary to explain these ideas becomes higher and higher. Third: Your brain gets tired faster when pair programming as opposed to programming alone. This makes sense, as you are subjected to additional stimuli when programming as a team, thus you learn faster, but as a result, you get worn out faster too. The thing to gather from all this: go out and find yourself a pair programming buddy and get to it! Post a message on Slack, or ask people you see at Meetups to pair program with you.</p><br><p>I am currently on the FreeCodeCamp track. Nobody is paying me to say this, but FreeCodeCamp is an awesome website, that has really great tutorials, algorithm challenges and projects you can do. Every project I have done so far (except the Frankulator spinoff) has been from their Front End Developer track. I have six more projects and 30 more algorithm challenges to complete before I can earn my Front End Development Certificate. I might end up tackling some of the Back End projects before I’m done with the Front End track, as completing Front End is not a prerequisite to starting on those projects. My goal is to start applying for jobs once I have a couple more projects under my belt, and I’m still not sure whether I want to attend a local coding bootcamp or not, (the next ones start in mid-January). All I know is that I want to keep coding!</p>
 		<h3 id="blogDate">November 14, 2016</h3>
 		<p>Welcome to my second blog post! I would like to update you all on what I have done so far. I have come up with an idea for my end-to-end application. I want to create a movie quote game. The game at its core is relatively simple, the user is shown a quote from a movie and they have to guess what movie the quote is from. Time and score will be kept track of, as well as different levels of difficulty; expert (multiple-choice), master (hang-man style guessing) and wizard (write-in the answer). Why is this game going to be so difficult? Because I want to use a 200 megabyte file of quotes from the IMDB website. I want to make a crawler that randomly chooses a quote from one of the tens of thousands of quotes in the file to display to the user. This game is designed for huge movie buffs in mind, as the sheer number of movies and quotes that the crawler could choose from would quickly frustrate the average movie-goer. The one hiccup in my project is getting permission from IMDB to crawl their file and make an app out of it that others can use. So far I have emailed IMDB with my request in the hopes that they let me create this project. If that ends up falling through, no fear, I will come up with a different idea!</p><br><p>One of my other ideas is to split up my Frankulator/Calculator project into two distinct beings. On the one hand, the Calculator can stand on its own as a regular, user friendly calculator, while the Frankulator is transformed into an application that outputs ‘fun’ stats on a given number. The user would type in or key in a number into the Frankulator and click the ‘Frankulate’ button. The application would then output a list of stats on the number, such as; is the number prime, how many divisors does it have, is it a Chen prime, etc. There would also be links to Wikipedia articles, informing the user of just what a Chen prime is. I think it would be quite fun and educational. I would also like to start incorporating accessibility into my projects, I want someone who does not use a mouse, to be able to navigate my Calculator with arrow keys, not by just tabbing through. I want to add a sound mode, where the keys of the calculator access the speaker of the computer and a voice (Siri?) can tell the user what keys they are hitting if they wish to do so. I think adding this stuff would be pretty cool and helpful.</p><br><p>I want to take the time to give some advice to others who are teaching themselves how to code. Use a multidisciplinary approach to teaching yourself programming. Podcasts, videos, meetups, tutorials, books, presentations, and many other tools and communities can help you on your way to becoming a software developer. However the best way to learn, is by doing, so you should strive to build your own programs as quickly as possible, no matter how simple or buggy these programs are, this will be a huge motivator for you in ways that other mediums of learning cannot reach.</p><br><p>I also have a secret productivity tip, that so far I have not heard anyone mention. When you get to the point very late in the day, when your brain is fuzzy and you find yourself spacing out, but you still want to squeeze in an extra 30-45 minutes of studying before you go to bed, do this: go to a popular github repository in the coding language that you are learning, and just starting typing out the code in one of the files. Even if you don’t know what the code means, just start typing it out in a separate text document. The first time I tried this, I noticed how weak my muscle-memory knowledge of where the special characters were located on the keyboard was. I was so much more used to typing out essays rather than blocks of code that I found myself typing at a snail’s pace while looking down at my fingers every time I needed a bracket or a semi-colon. I feel this technique is akin to listening to a foreign-language book on tape, even though you do not know any of the words, you are still learning, and in effect, the language of computers is a foreign language to many of us. That’s all for today, see you next time!</p>
 		<h3 id="blogDate">November 11, 2016</h3>
