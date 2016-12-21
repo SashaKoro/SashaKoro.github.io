@@ -136,42 +136,45 @@
 				height: 100%;
 				width: 100%;
 				color: #555F61;
+				text-align: center;
 			}
 			#hiddenprojects {
+				height: 100%;
+				width: 100%;
+				color: #555F61;
+				text-align: center;
+				font-family: arial;
 				display: none;
 			}
+			.projectcontainer {
+				display: inline-block;
+			}
 			#projectHeader {
-				margin-left: 26%;
 				padding-bottom: 100px;
 			}
-			#iconRow {
-				padding-bottom: 50px;
-				margin-left: 22%;
-			}
-			#secondiconRow {
-				padding-top: 100px;
-			}
-			#secondLinkRow {
-				padding-bottom: 100px;
+			#projectRowTwo {
+				margin-top: 30px;
+				margin-bottom: 75px;
 			}
 			.fa-calculator {
 				font-size: 220px;
 			}
 			.fa-id-badge {
 				font-size: 220px;
-				margin-left: 12%;
+				margin-left: 70px;
+				margin-right: 70px;
 			}
 			.fa-gears {
 				font-size: 220px;
-				margin-left: 12%;
 			}
 			.fa-cloud {
 				font-size: 220px;
-				margin-left: 22%;
+			}
+			#cloudfig {
+				margin-right: 80px;
 			}
 			.fa-life-bouy {
-				font-size: 220px;
-				margin-left: 7%;
+				font-size: 200px;
 			}
 			.fa-rotate-45 {
 			    -webkit-transform: rotate(45deg);
@@ -183,27 +186,26 @@
 			#calcLink {
 				color: black;
 				text-decoration: none;
-				margin-left: 22%;
+				line-height: 75px;
 			}
 			#eulerLink {
-				margin-left: 11%;
 				color: black;
 				text-decoration: none;
+				line-height: 75px;
 			}
 			#quoteLink {
 				color: black;
 				text-decoration: none;
-				margin-left: 14%;
+				line-height: 75px;
 			}
 			#weatherLink {
 				color: black;
 				text-decoration: none;
-				margin-left: 25%;
 			}
 			#simonLink {
 				color: black;
 				text-decoration: none;
-				margin-left: 14%;
+				line-height: 75px;
 			}
 			#calcLink:hover {
 				text-decoration: underline;
@@ -245,6 +247,9 @@
 				text-decoration: underline;
 				outline-style: none;					
 			}
+			#lastfig {
+				margin-bottom: 60px;
+			}
 			#blog {
 				padding-left: 16%;
 				padding-right: 16%;
@@ -280,23 +285,9 @@
     				padding-left: 12%;
 					padding-right: 12%;
 				}
-				#iconRow {
-					margin-left: 10%;
-				}	
-				#calcLink {
-					margin-left: 10%;
-				}	
-				.fa-cloud {
-					margin-left: 10%;
-				}
-				#weatherLink {
-					margin-left: 15%;
-				}
-				#simonLink {
-					margin-left: 17%;
-				}
-				#projectHeader {
-					margin-left: 15%;
+				.fa-id-badge {
+					margin-left: 40px;
+					margin-right: 40px;
 				}
 			}
 			@media only screen and (max-width: 950px) {
@@ -307,41 +298,32 @@
     				padding-left: 9%;
 					padding-right: 9%;
 				}	
-				#iconRow {
-					margin-left: 4%;
-				}	
-				#calcLink {
-					margin-left: 4%;
-				}
-				#weatherLink {
-					margin-left: 9%;
-				}
-				#simonLink {
-					margin-left: 16%;
-				}
-				.fa-calculator {
-					font-size: 180px;
-				}
-				.fa-id-badge {
-					font-size: 180px;
-					margin-left: 12%;
-				}
-				.fa-gears {
-					font-size: 180px;
-					margin-left: 12%;
-				}
-				.fa-cloud {
-					margin-left: 4%;
-					font-size: 180px;
-				}	
-				.fa-life-bouy {
-					font-size: 180px;
-					margin-left: 9%;
-				}
 				#projectHeader {
 					font-size: 32px;
-					margin-left: 8%;
-				}			
+				}					
+				.fa-calculator {
+					font-size: 160px;
+				}
+				.fa-id-badge {
+					font-size: 160px;
+					margin-left: 0px;
+					margin-right: 0px;
+				}
+				.fa-gears {
+					font-size: 160px;
+				}
+				.fa-cloud {
+					font-size: 160px;
+				}	
+				#cloudfig {
+					margin-right: 50px;
+				}
+				.fa-life-bouy {
+					font-size: 160px;
+				}	
+				.projectcontainer {
+					font-size: 17px;
+				}	
 			}			
 			@media only screen and (max-width: 720px) {
     			#logo {
@@ -366,7 +348,6 @@
 					margin-left: 5%;
 					margin-right: 5%;
 					font-size: 28px;
-					text-align: center;
 				}
 				#projectwrap {
 					display: none;
@@ -374,49 +355,29 @@
 				#hiddenprojects {
 					display: block;
 				}	
-			.fa-calculator {
-				margin-left: 34%;
-				font-size: 220px;
-			}
-			.fa-id-badge {
-				font-size: 220px;
-				margin-left: 37%;
-				margin-top: 50px;
-			}
-			.fa-gears {
-				font-size: 220px;
-				margin-left: 32%;
-				margin-top: 50px;
-			}
-			.fa-cloud {
-				font-size: 220px;
-				margin-left: 32%;
-				margin-top: 50px;
-			}
-			.fa-life-bouy {
-				font-size: 220px;
-				margin-left: 34%;
-				margin-top: 50px;
-			}
-			#calcLink {
-				margin-left: 34%;
-				line-height: 75px;
-			}
-			#eulerLink {
-				margin-left: 40%;
-				line-height: 75px;
-			}
-			#quoteLink {
-				margin-left: 38%;
-				line-height: 75px;
-			}
-			#weatherLink {
-				margin-left: 40%;
+				.fa-calculator {
+					font-size: 220px;
+				}
+				.fa-id-badge {
+					font-size: 220px;
+					margin-top: 30px;
+				}
+				.fa-gears {
+					font-size: 220px;
+					margin-top: 30px;
+				}
+				.fa-cloud {
+					font-size: 220px;
+					margin-top: 30px;
+				}
+				.fa-life-bouy {
+					font-size: 220px;
+					margin-top: 30px;
+				}	
+				.projectcontainer {
+					font-size: 20px;
+				}	 			
 			}	
-			#simonLink {
-				margin-left: 41%;
-			}			 			
-		}	
 			@media only screen and (max-width: 550px) {
     			#logo {
     				margin-right: 1%;
@@ -494,91 +455,60 @@
 					padding-top: 50px;
 					padding-bottom: 15px;
 				}	
-			.fa-calculator {
-				margin-left: 25%;
-				font-size: 200px;
-			}
-			.fa-id-badge {
-				font-size: 200px;
-				margin-left: 30%;
-				margin-top: 50px;
-			}
-			.fa-gears {
-				font-size: 200px;
-				margin-left: 20%;
-				margin-top: 50px;
-			}
-			.fa-cloud {
-				font-size: 200px;
-				margin-left: 21%;
-				margin-top: 50px;
-			}
-			.fa-life-bouy {
-				font-size: 200px;
-				margin-left: 23%;
-			}
-			#calcLink {
-				margin-left: 21%;
-				line-height: 75px;
-			}
-			#eulerLink {
-				margin-left: 34%;
-				line-height: 75px;
-			}
-			#quoteLink {
-				margin-left: 32%;
-				line-height: 75px;
-			}
-			#weatherLink {
-				margin-left: 33%;
-				padding-bottom: 50px;
-				display: inline-block;
+				.fa-calculator {
+					font-size: 200px;
+				}
+				.fa-id-badge {
+					font-size: 200px;
+				}
+				.fa-gears {
+					font-size: 200px;
+				}
+				.fa-cloud {
+					font-size: 200px;
+				}
+				.fa-life-bouy {
+					font-size: 200px;
+				}
+				#header {
+					height: 60px;
+				}	  	
+				#projectHeader {
+					padding-bottom: 50px;
+				}
+				#ProjectsButton {
+					text-align: left;
+				}
+				#self {
+					margin-right: 18%;
+				}
+				#logo {
+					border-top: 20px solid #1496BB;
+					border-right: 20px solid #F26D21; 
+					border-left: 20px solid #F26D21;
+					border-bottom: 10px solid transparent;
+				}
+				#about {
+					padding-top: 80px;
+				}
+				#blogHeader {
+					padding-top: 0px;
+				}
+				#blog {
+					padding-top: 80px;
+					font-size: 18px;
+				}
+				#blogDate {
+					padding-top: 20px;
+					padding-bottom: 8px;
+				}	
+				.site-footer {
+					display: none;
+				}
+				.smallfooter {
+					display: block;
+				}
 			}	
-			#simonLink {
-				margin-left: 33%;
-				padding-bottom: 50px;
-				padding-top: 25px;
-				display: inline-block;				
-			}
-			#header {
-				height: 60px;
-			}	  	
-			#projectHeader {
-				padding-bottom: 50px;
-			}
-			#ProjectsButton {
-				text-align: left;
-			}
-			#self {
-				margin-right: 18%;
-			}
-			#logo {
-				border-top: 20px solid #1496BB;
-				border-right: 20px solid #F26D21; 
-				border-left: 20px solid #F26D21;
-				border-bottom: 10px solid transparent;
-			}
-			#about {
-				padding-top: 80px;
-			}
-			#blogHeader {
-				padding-top: 0px;
-			}
-			#blog {
-				padding-top: 80px;
-				font-size: 18px;
-			}
-			#blogDate {
-				padding-top: 20px;
-				padding-bottom: 8px;
-			}	
-			.site-footer {
-				display: none;
-			}
-			.smallfooter {
-				display: block;
-			}
-		}	
 		@media only screen and (max-width: 370px) {
 			    #logo {
     				margin-right: 1%;
@@ -615,127 +545,86 @@
 					padding-top: 50px;
 					padding-bottom: 15px;
 				}	
-			.fa-calculator {
-				margin-left: 17%;
-				font-size: 220px;
-			}
-			.fa-id-badge {
-				font-size: 220px;
-				margin-left: 24%;
-				margin-top: 50px;
-			}
-			.fa-gears {
-				font-size: 220px;
-				margin-left: 13%;
-				margin-top: 50px;
-			}
-			.fa-cloud {
-				font-size: 220px;
-				margin-left: 13%;
-				margin-top: 50px;
-			}
-			.fa-life-bouy {
-				font-size: 220px;
-				margin-left: 16%;
-			}
-			#calcLink {
-				margin-left: 15%;
-				line-height: 75px;
-			}
-			#eulerLink {
-				margin-left: 30%;
-				line-height: 75px;
-			}
-			#quoteLink {
-				margin-left: 27%;
-				line-height: 75px;
-			}
-			#weatherLink {
-				margin-left: 30%;
+				#header {
+					height: 60px;
+				}	  	
+				#ProjectsButton {
+					text-align: left;
+				}
+				#self {
+					float: left;
+				}
+				#logo {
+					border-top: 20px solid #1496BB;
+					border-right: 20px solid #F26D21; 
+					border-left: 20px solid #F26D21;
+					border-bottom: 10px solid transparent;
+				}
+				#about {
+					padding-top: 80px;
+				}
+				#blogHeader {
+					padding-top: 0px;
+				}
+				#blog {
+					padding-top: 80px;
+					font-size: 18px;
+				}
+				#blogDate {
+					padding-top: 20px;
+					padding-bottom: 8px;
+				}	
 			}	
-			#simonLink {
-				margin-left: 30%;
+			@media only screen and (max-height: 800px) {
+				#blogHeader {
+					padding-top: 30px;
+				}
+				#blogDate {
+					padding-top: 45px;
+					padding-bottom: 16px;
+				}
 			}
-			#header {
-				height: 60px;
-			}	  	
-			#ProjectsButton {
-				text-align: left;
+			@media only screen and (max-height: 500px) {
+				#projects {
+					padding-top: 65px;
+				}
+				#projectHeader {
+					padding-bottom: 30px;
+				}	
+				#blogHeader {
+					padding-top: 0px;
+				}
+				#blog {
+					padding-top: 80px;
+					font-size: 18px;
+				}
+				#blogDate {
+					padding-top: 20px;
+					padding-bottom: 8px;
+				}	
+				#header {
+					height: 60px;
+				}
+				#logo {
+					border-top: 20px solid #1496BB;
+					border-right: 20px solid #F26D21; 
+					border-left: 20px solid #F26D21;
+					border-bottom: 10px solid transparent;
+				}
+				.headerButtons {
+					margin-top: 15px;
+					margin-right: 9px;
+					height: 40px;
+					width: 105px;
+					max-width: 120px;
+				}
+				.site-footer {
+					display: none;
+				}
+				.smallfooter {
+					display: block;
+				}
 			}
-			#self {
-				float: left;
-			}
-			#logo {
-				border-top: 20px solid #1496BB;
-				border-right: 20px solid #F26D21; 
-				border-left: 20px solid #F26D21;
-				border-bottom: 10px solid transparent;
-			}
-			#about {
-				padding-top: 80px;
-			}
-			#blogHeader {
-				padding-top: 0px;
-			}
-			#blog {
-				padding-top: 80px;
-				font-size: 18px;
-			}
-			#blogDate {
-				padding-top: 20px;
-				padding-bottom: 8px;
-			}	
-		}	
-		@media only screen and (max-height: 800px) {
-			#blogHeader {
-				padding-top: 30px;
-			}
-			#blogDate {
-				padding-top: 45px;
-				padding-bottom: 16px;
-			}
-		}
-		@media only screen and (max-height: 500px) {
-			#projects {
-				padding-top: 65px;
-			}
-			#projectHeader {
-				padding-bottom: 30px;
-			}	
-			#blogHeader {
-				padding-top: 0px;
-			}
-			#blog {
-				padding-top: 80px;
-				font-size: 18px;
-			}
-			#blogDate {
-				padding-top: 20px;
-				padding-bottom: 8px;
-			}	
-			#header {
-				height: 60px;
-			}
-			#logo {
-				border-top: 20px solid #1496BB;
-				border-right: 20px solid #F26D21; 
-				border-left: 20px solid #F26D21;
-				border-bottom: 10px solid transparent;
-			}
-			.headerButtons {
-				margin-top: 15px;
-				margin-right: 9px;
-				height: 40px;
-				width: 105px;
-				max-width: 120px;
-			}
-			.site-footer {
-				display: none;
-			}
-			.smallfooter {
-				display: block;
-			}
-		}
 
 		</style>
 	</head>
@@ -751,7 +640,7 @@
 	<div class="toggled" id="about">	
 		<figure id="self">
   			<img src="images/IMG_0855.jpg" alt="A photo of me" title="Visiting the Abbey of Gethsemani"/>
-  		<figcaption></figcaption>
+  			<figcaption></figcaption>
   		</figure>
   		<h1 id="introHeader">Alexandre Korotkov (Sasha)</h1>
 		<p id="introParagraph">Welcome to my site! My name is Alexandre Korotkov, but everyone calls me Sasha. I moved to Cincinnati in September of 2016 and started learning programming that very same month. I am a self-taught developer. The main tools I use to help me learn are FreeCodeCamp, Podcasts, Project Euler, Meetups, and paired programming. My favorite text editor is sublime(although emacs looks really cool), and my favorite place to study is the Xavier University Library. My strengths are:</p>
@@ -763,52 +652,90 @@
 			<li>Enjoy pair programming with and mentoring other up-and-coming programmers.</li>		
 		</ul>
 	</div>
+
 	<div class="toggled" id="projects">
 		<h1 id="projectHeader">Here are some of the cool things I've built</h1>
 		<div id="projectwrap">
-		<div id="iconRow">
-			<i class="fa fa-calculator"></i>
-			<i class="fa fa-id-badge"></i>
-			<i class="fa fa-gears"></i>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-calculator"></i>
+					<figcaption>
+						<a id="calcLink" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
+					</figcaption>
+				</figure>
+				<figure class="projectcontainer">
+					<i class="fa fa-id-badge"></i>
+					<figcaption>
+						<a id="eulerLink" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+					</figcaption>
+				</figure>
+				<figure class="projectcontainer">
+					<i class="fa fa-gears"></i>
+					<figcaption>
+						<a id="quoteLink" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div id="projectRowTwo">
+				<figure id="cloudfig" class="projectcontainer">
+					<i class="fa fa-cloud"></i>
+					<figcaption>
+						<a id="weatherLink" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
+					</figcaption>
+				</figure>
+				<figure class="projectcontainer">
+					<i class="fa fa-life-bouy fa-rotate-45"></i>
+					<figcaption>
+						<a id="simonLink" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+					</figcaption>
+				</figure>
+			</div>
 		</div>
-		<div id="projectLinkRow">
-			<a id="calcLink" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
-			<a id="eulerLink" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
-			<a id="quoteLink" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
-		</div>
-		<div id="secondiconRow">
-			<i class="fa fa-cloud"></i>
-			<i class="fa fa-life-bouy fa-rotate-45"></i>
-		</div>
-		<div id="secondLinkRow">
-			<a id="weatherLink" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
-			<a id="simonLink" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+		<div id="hiddenprojects">
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-calculator"></i>
+					<figcaption>
+						<a id="calcLink" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-id-badge"></i>
+					<figcaption>
+						<a id="eulerLink" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-gears"></i>
+					<figcaption>
+						<a id="quoteLink" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure id="cloudfig" class="projectcontainer">
+					<i class="fa fa-cloud"></i>
+					<figcaption>
+						<a id="weatherLink" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure id="lastfig" class="projectcontainer">
+					<i class="fa fa-life-bouy fa-rotate-45"></i>
+					<figcaption>
+						<a id="simonLink" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+					</figcaption>
+				</figure>
+			</div>
 		</div>
 	</div>
-	<div id="hiddenprojects">
-		<div>
-			<i class="fa fa-calculator"></i>
-		</div>
-		<a id="calcLink" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
-		<div>
-			<i class="fa fa-id-badge"></i>
-		</div>
-		<a id="eulerLink" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
-		<div>
-			<i class="fa fa-gears"></i>
-		</div>
-		<a id="quoteLink" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
-		<div>
-			<i class="fa fa-cloud"></i>
-		</div>
-		<a id="weatherLink" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
-		<div>
-			<i class="fa fa-life-bouy fa-rotate-45"></i>
-		</div>
-		<a id="simonLink" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>		
-		</div>
-	</div>
-		<div class="toggled" id="blog">
+
+	<div class="toggled" id="blog">
 		<h1 id="blogHeader">Welcome to my blog!</h1>
 		<h3 id="blogDate">December 17, 2016</h3>
 		<p>This week I have completed my latest project. An online version of the popular memory game ‘Simon’. A link to view and play the game can be found under the ‘projects’ tab. The app is fully operational, however the code itself is a little too verbose and does not follow the Single Responsibility Principle. Thus it is difficult to understand, update and debug. I aim to in the coming weeks to fix up the code in not only the Simon project but in my other projects to make sure that my code is more readable and easier to debug. I have not been fully following the popular ‘Make it work, Make it right, Make it fast’ philosophy. After making my software work I have found myself moving onto a new project, without spending alot of time making the code ‘right’. There is alot to be learned in refactoring your code, and I have been missing out. I plan to tackle one of the backend projects on FreeCodeCamp next, I really want to gain a better understanding of servers, databases and the whole ‘back-end’ infrastructure that can complement my JavaScript.</p><br><p>I have also begun to learn ReactJS this week. So far I am just getting started, and I have even needed to go back into Javascript and brush up on my knowledge on things like Closures, Recursion and Callback functions before even touching React. The goal is to fully refactor my Calc/Frankulator app using ReactJS. My goal for next week is to just take in as many React tutorials as I can to get a better understanding of the ES5 syntax and the entire ‘process’ of what React does. The week after that is when I plan to begin refactoring the Calc/Frankulator from the ground up. If everything goes smoothly, I plan on getting into Redux, which is apparently a great partner to React.</p><br><p>I was listening to a Ruby Rogues podcast earlier this week, and the topic was paired programming. One of the founders of ‘Pair Columbus’ happened to be on the show, and I ended up finding their Meetup group and signed up for their next pairing Meetup happening on January 14th. As I mentioned in an earlier blog post, I plan to create a paired programming Meetup here in Cincinnati; so going to the ‘Pair Columbus’ Meetup is an excellent opportunity for me to see how a paired programming Meetup operates and to hopefully meet some of the organizers and ask them for advice on creating my own pairing group. The tentative plan right now is to have the Meetup every other Saturday (the Saturday that the Cincinnati Web Tech Study Group does not meet) and to have it be a 2-3 hour long event. Once I have attended the ‘Pair Columbus’ event, I know I will have a much clearer idea on how my Meetup will go.</p>
