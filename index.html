@@ -415,26 +415,34 @@
 				}					     			
 			}	
 			@media only screen and (max-width: 390px) {
+				#header {
+					height: 60px;
+				}					
     			#logo {
     				margin-right: 4%;
     				margin-left: 4%;
+  					border-top: 20px solid #1496BB;
+					border-right: 20px solid #F26D21; 
+					border-left: 20px solid #F26D21;
+					border-bottom: 10px solid transparent;  				
     			}
     			.headerButtons {
     				width: 80px;
     				font-size: 15px;
     				margin-top: 15px;
     			}
-      		    #blog {
-					font-size: 16px;
+    			#about {
+					padding-top: 80px;
+				}				
+				#self {
+					margin-right: 18%;
 				}	 
 				#introParagraph {
 					margin-left: 5%;
 					margin-right: 5%;
 					margin-bottom: 40px;
 				}
-				#projects {
-					padding-top: 100px;
-				}	
+
 				#introHeader {
 					text-align: center;
 					font-size: 24px;
@@ -444,16 +452,6 @@
 					margin-left: 6%;
 					margin-right: 6%;
 					margin-bottom: 50px;
-				}	
-				#projectHeader {
-					font-size: 24px;
-				}	
-				#blogHeader {
-					padding-top: 25px;
-				}
-				#blogDate {
-					padding-top: 50px;
-					padding-bottom: 15px;
 				}	
 				.fa-calculator {
 					font-size: 200px;
@@ -469,34 +467,22 @@
 				}
 				.fa-life-bouy {
 					font-size: 200px;
-				}
-				#header {
-					height: 60px;
-				}	  	
+				}  	
+				#projects {
+					padding-top: 100px;
+				}					
 				#projectHeader {
 					padding-bottom: 50px;
 				}
 				#ProjectsButton {
 					text-align: left;
 				}
-				#self {
-					margin-right: 18%;
-				}
-				#logo {
-					border-top: 20px solid #1496BB;
-					border-right: 20px solid #F26D21; 
-					border-left: 20px solid #F26D21;
-					border-bottom: 10px solid transparent;
-				}
-				#about {
-					padding-top: 80px;
-				}
+
+      		    #blog {
+					font-size: 16px;
+				}				
 				#blogHeader {
 					padding-top: 0px;
-				}
-				#blog {
-					padding-top: 80px;
-					font-size: 18px;
 				}
 				#blogDate {
 					padding-top: 20px;
@@ -510,6 +496,10 @@
 				}
 			}	
 		@media only screen and (max-width: 370px) {
+
+				#header {
+					height: 60px;
+				}				
 			    #logo {
     				margin-right: 1%;
     				margin-left: 1%;
@@ -518,61 +508,25 @@
     				width: 68px;
     				font-size: 15px;
     				margin-top: 15px;
-    			}
-      		    #blog {
-					font-size: 16px;
-				}	 
+    			} 
+    			#self {
+					float: left;
+				}
 				#introParagraph {
 					margin-left: 4%;
 					margin-right: 4%;
 				}	
-				#introHeader {
-					text-align: center;
-					font-size: 24px;
-				}		
-				#skillList {
-					margin-left: 6%;
-					margin-right: 6%;
-				}	
+
 				#projectHeader {
 					font-size: 24px;
-					padding-bottom: 50px;
-				}	
-				#blogHeader {
-					padding-top: 25px;
-				}
-				#blogDate {
-					padding-top: 50px;
-					padding-bottom: 15px;
-				}	
-				#header {
-					height: 60px;
 				}	  	
 				#ProjectsButton {
 					text-align: left;
 				}
-				#self {
-					float: left;
-				}
-				#logo {
-					border-top: 20px solid #1496BB;
-					border-right: 20px solid #F26D21; 
-					border-left: 20px solid #F26D21;
-					border-bottom: 10px solid transparent;
-				}
-				#about {
-					padding-top: 80px;
-				}
-				#blogHeader {
-					padding-top: 0px;
-				}
-				#blog {
-					padding-top: 80px;
-					font-size: 18px;
-				}
+
 				#blogDate {
-					padding-top: 20px;
-					padding-bottom: 8px;
+					padding-top: 50px;
+					padding-bottom: 15px;
 				}	
 			}	
 			@media only screen and (max-height: 800px) {
@@ -585,23 +539,6 @@
 				}
 			}
 			@media only screen and (max-height: 500px) {
-				#projects {
-					padding-top: 65px;
-				}
-				#projectHeader {
-					padding-bottom: 30px;
-				}	
-				#blogHeader {
-					padding-top: 0px;
-				}
-				#blog {
-					padding-top: 80px;
-					font-size: 18px;
-				}
-				#blogDate {
-					padding-top: 20px;
-					padding-bottom: 8px;
-				}	
 				#header {
 					height: 60px;
 				}
@@ -618,9 +555,29 @@
 					width: 105px;
 					max-width: 120px;
 				}
+
+				#projects {
+					padding-top: 65px;
+				}
+				#projectHeader {
+					padding-bottom: 30px;
+				}	
+				#blogHeader {
+					padding-top: 0px;
+				}
+
+				#blog {
+					padding-top: 80px;
+					font-size: 18px;
+				}
+				#blogDate {
+					padding-top: 20px;
+					padding-bottom: 8px;
+				}	
 				.site-footer {
 					display: none;
 				}
+
 				.smallfooter {
 					display: block;
 				}
@@ -737,8 +694,10 @@
 
 	<div class="toggled" id="blog">
 		<h1 id="blogHeader">Welcome to my blog!</h1>
+		<h3 id="blogDate">January 16, 2017</h3>
+		<p>It’s been a while! Let this be the first blog post of the new year. The last two weeks have gone really well, I have finished rebuilding my Calc/Frankulator using React and while it looks the same on the outside, it is quite different when you look at the code. The new version has a modular design with dozens of different files containing different functions, tests, and components. I have used a CSS library called ‘styled components’ to style the app, and now the CSS for each component lives right in the components’ respective file as opposed to one long stylesheet. ES6 syntax has served me well in creating the project as arrow functions and de-structuring has allowed me to be more concise in my code. Template strings, while requiring a bit more code sometimes, help differentiate when I am actually adding variables together and when I am doing string concatenation. Variable names have been changed from the unintelligible “x” and “y’s” to ‘inputNum’ and ‘potentialDivisor’ and many more. I didn’t quite realize how difficult my code was to understand until I had gone back to it myself after a month since last seeing it. I have noticed myself having quite a lot of fun looking at my old code and trying to spruce it up with ES6 and increased readability. I have gone to some of my completed Free Code Camp Algorithm challenges and rewrote them, in some cases I was able to more than half the number of lines of code I had previously used!</p><br><p>Speaking of FCC, just earlier today, I have finished solving all of the Algorithm challenges, and now I only have to complete 3 more projects (twitch API, Pomodoro Clock and Tic Tac Toe) to earn my Front End Development Certificate. My goal is to use React in building each project, and to have them all done in the next 3 weeks. I’m planning to save the Tic Tac Toe project for last because I think it will be the most challenging, not only in terms of state changes but also in programming the ‘AI’ for the computer opponent. I think finishing the course will give me a big confidence boost for tackling the data visualization and back end projects. (I’m looking at you Game of Life) Part of me is a bit sad though, no more FCC algorithm challenges!  I will have to revisited them in a year or two, once I have forgotten the answers and then see if I can solve each of them in one line of code.</p><br><p>For this blog post I also have a book recommendation. How to Stop Worrying and Start Living by Dale Carnegie. I have had this book for a while now but I have never went too far into it, until last week when I caught myself worrying quite a bit on whether I should attend an upcoming coding bootcamp or continuing to study on my own. The book offered some excellent perspective and a plethora of stories from people who’s past troubles will make mine or yours seem like an afternoon picnic.</p>
 		<h3 id="blogDate">December 29, 2016</h3>
-		<p>I have spent the last two weeks neck deep in React and React related things. Its been a lot of fun, and I have learned quite a bit. React is a Javascript Library that has been open sourced by Facebook. Its main function is to create user interfaces by putting ‘html’ (JSX) inside your Javascript and using functions to output ‘views’ as opposed to regular outputs. While learning React I have incidentally learned a whole bunch of other stuff on the way. Here are some of the new tools and processes I have come across:</p><br><p>Linting is the process of running an automated bug and syntax checking program, and it is customizable to the point where you can make it ‘enforce’ your programs to follow best practices. It has been very helpful in catching errors on the fly. I think this is something akin to ‘static type checking’.</p><br><p>Babel is a Javascript compiler that turns your ES6 (also known as ES2015) code into ES5 so browsers can understand it. ES6 is the latest version of Javascript and it has not been completely implemented by web browsers (especially Internet Explorer) so Babel is a handy tool that ‘transforms’ your ES6 syntax back into understandable ES5 syntax right before shipping it into the browser. Babel also offers something called ‘polyfill’, from my understanding this is to enable 100% ES6 emulation at the cost of large files (50kb) is the number I have heard thrown around.</p><br><p>Webpack is code bundler. It takes all of your nicely modulated Javascript files and combines them into a single file before delivering it into the browser (or server). I had no need for Webpack prior to learning React, since my Javascript usually sat in one big file, but now that I’m working on writing more readable and reusable code, Webpack has become a bigger necessity for making sure my applications continue to run fast. Webpack is also capable of handling css files and various Bootstrap font files.</p><br><p>React Router is a library that can handle the Routing needs of your React projects. Routing is the process of displaying the correct user interface when the URL of the website is changed. With routing you have hashtag routing (www.google.com/#/example) and clean routing (www.google.com/example). The hashtag method supports older browsers that cannot handle the HTML5 history API, but many prefer the clean method because, well, it looks cleaner!</p><br><p>Package.json is kind of a big deal. It is a ‘technical readme’ of sorts that you need for each one of your projects. It lists all the dependencies that your project relies on, for both development and production. It can also list handy command line scripts for starting up your project, running tests and linting tools. It is also the place that houses the URL to your GitHub repository, so you can push changes right from the command line.</p><br><p>These are just a few of them. There are so many tools and libraries in the Javascript world that it can get kind of overwhelming. The good news is that many of them are very similar and if you figure out the fundamentals you can even make your own (not there yet!). I’m making pretty good progress with rebuilding my Calc/Frankulator using React; in-fact the application is already usable, although the code is far from polished, that is what I will be focusing on in the next two weeks.</p><br><p>
+		<p>I have spent the last two weeks neck deep in React and React related things. Its been a lot of fun, and I have learned quite a bit. React is a Javascript Library that has been open sourced by Facebook. Its main function is to create user interfaces by putting ‘html’ (JSX) inside your Javascript and using functions to output ‘views’ as opposed to regular outputs. While learning React I have incidentally learned a whole bunch of other stuff on the way. Here are some of the new tools and processes I have come across:</p><br><p>Linting is the process of running an automated bug and syntax checking program, and it is customizable to the point where you can make it ‘enforce’ your programs to follow best practices. It has been very helpful in catching errors on the fly. I think this is something akin to ‘static type checking’.</p><br><p>Babel is a Javascript compiler that turns your ES6 (also known as ES2015) code into ES5 so browsers can understand it. ES6 is the latest version of Javascript and it has not been completely implemented by web browsers (especially Internet Explorer) so Babel is a handy tool that ‘transforms’ your ES6 syntax back into understandable ES5 syntax right before shipping it into the browser. Babel also offers something called ‘polyfill’, from my understanding this is to enable 100% ES6 emulation at the cost of large files (50kb) is the number I have heard thrown around.</p><br><p>Webpack is code bundler. It takes all of your nicely modulated Javascript files and combines them into a single file before delivering it into the browser (or server). I had no need for Webpack prior to learning React, since my Javascript usually sat in one big file, but now that I’m working on writing more readable and reusable code, Webpack has become a bigger necessity for making sure my applications continue to run fast. Webpack is also capable of handling css files and various Bootstrap font files.</p><br><p>React Router is a library that can handle the Routing needs of your React projects. Routing is the process of displaying the correct user interface when the URL of the website is changed. With routing you have hashtag routing (www.google.com/#/example) and clean routing (www.google.com/example). The hashtag method supports older browsers that cannot handle the HTML5 history API, but many prefer the clean method because, well, it looks cleaner!</p><br><p>Package.json is kind of a big deal. It is a ‘technical readme’ of sorts that you need for each one of your projects. It lists all the dependencies that your project relies on, for both development and production. It can also list handy command line scripts for starting up your project, running tests and linting tools. It is also the place that houses the URL to your GitHub repository, so you can push changes right from the command line.</p><br><p>These are just a few of them. There are so many tools and libraries in the Javascript world that it can get kind of overwhelming. The good news is that many of them are very similar and if you figure out the fundamentals you can even make your own (not there yet!). I’m making pretty good progress with rebuilding my Calc/Frankulator using React; in-fact the application is already usable, although the code is far from polished, that is what I will be focusing on in the next two weeks.</p>
 		<h3 id="blogDate">December 17, 2016</h3>
 		<p>This week I have completed my latest project. An online version of the popular memory game ‘Simon’. A link to view and play the game can be found under the ‘projects’ tab. The app is fully operational, however the code itself is a little too verbose and does not follow the Single Responsibility Principle. Thus it is difficult to understand, update and debug. I aim to in the coming weeks to fix up the code in not only the Simon project but in my other projects to make sure that my code is more readable and easier to debug. I have not been fully following the popular ‘Make it work, Make it right, Make it fast’ philosophy. After making my software work I have found myself moving onto a new project, without spending alot of time making the code ‘right’. There is alot to be learned in refactoring your code, and I have been missing out. I plan to tackle one of the backend projects on FreeCodeCamp next, I really want to gain a better understanding of servers, databases and the whole ‘back-end’ infrastructure that can complement my JavaScript.</p><br><p>I have also begun to learn ReactJS this week. So far I am just getting started, and I have even needed to go back into Javascript and brush up on my knowledge on things like Closures, Recursion and Callback functions before even touching React. The goal is to fully refactor my Calc/Frankulator app using ReactJS. My goal for next week is to just take in as many React tutorials as I can to get a better understanding of the ES5 syntax and the entire ‘process’ of what React does. The week after that is when I plan to begin refactoring the Calc/Frankulator from the ground up. If everything goes smoothly, I plan on getting into Redux, which is apparently a great partner to React.</p><br><p>I was listening to a Ruby Rogues podcast earlier this week, and the topic was paired programming. One of the founders of ‘Pair Columbus’ happened to be on the show, and I ended up finding their Meetup group and signed up for their next pairing Meetup happening on January 14th. As I mentioned in an earlier blog post, I plan to create a paired programming Meetup here in Cincinnati; so going to the ‘Pair Columbus’ Meetup is an excellent opportunity for me to see how a paired programming Meetup operates and to hopefully meet some of the organizers and ask them for advice on creating my own pairing group. The tentative plan right now is to have the Meetup every other Saturday (the Saturday that the Cincinnati Web Tech Study Group does not meet) and to have it be a 2-3 hour long event. Once I have attended the ‘Pair Columbus’ event, I know I will have a much clearer idea on how my Meetup will go.</p>
 		<h3 id="blogDate">December 9, 2016</h3>
@@ -780,10 +739,10 @@
     <script>
 
 	$("[data-toggle]").on("click", function(e) {
-  	e.preventDefault();  
-  	var selector = $(this).data("toggle"); 
-  	$(".toggled").hide();
-  	$(selector).show();
+  		e.preventDefault();  
+  		var selector = $(this).data("toggle"); 
+  		$(".toggled").hide();
+  		$(selector).show();
 	});
 
     </script>
