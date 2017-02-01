@@ -35,7 +35,7 @@
 			.page-wrap {
 				flex: 1;
 			}
-			.toggled:not(#projects) {
+			.toggled:not(#about) {
     			display: none;
 			}
 			.toggled {
@@ -86,6 +86,10 @@
 				float: right;
 				margin-right: 12%;
 				padding-left: 30px;
+			}
+			#photo {
+				border-radius: 7px;
+				border: 7px solid #555F61;
 			}
 			#introHeader {
 				margin-left: 14%;
@@ -157,6 +161,12 @@
 			}
 			.projectIcons {
 				font-size: 220px;
+			}
+			.iconLinks {
+				color: #555F61;
+			}
+			.iconLinks:hover {
+				color: #666F70;
 			}
 			#cloudfig {
 				margin-right: 50px;
@@ -290,6 +300,12 @@
       		    #blog {
 					font-size: 18px;
 				}	 
+				#self {
+					float: none;
+					margin: auto;
+					text-align: center;
+					padding-left: 0px;
+				}
 				#introParagraph {
 					margin-left: 4%;
 					margin-right: 4%;
@@ -334,9 +350,6 @@
     			#about {
 					padding-top: 80px;
 				}				
-				#self {
-					margin-right: 18%;
-				}	 
 				#introParagraph {
 					margin-left: 5%;
 					margin-right: 5%;
@@ -386,9 +399,6 @@
     			.headerButtons {
     				width: 68px;
     			} 
-    			#self {
-					float: left;
-				}
 			}	
 			@media only screen and (max-height: 800px) {
 				#blogHeader {
@@ -453,14 +463,14 @@
 	</div>
 	<div class="toggled" id="about">	
 		<figure id="self">
-  			<img src="images/IMG_0855.jpg" alt="A photo of me" title="Visiting the Abbey of Gethsemani"/>
+  			<img id="photo" src="images/IMG_0855.jpg" alt="A photo of me" title="Visiting the Abbey of Gethsemani"/>
   			<figcaption></figcaption>
   		</figure>
   		<h1 id="introHeader">Alexandre Korotkov (Sasha)</h1>
-		<p id="introParagraph">Welcome to my site! My name is Alexandre Korotkov, but everyone calls me Sasha. I moved to Cincinnati in September of 2016 and started learning programming that very same month. I am a self-taught developer. The main tools I use to help me learn are FreeCodeCamp, Podcasts, Udemy, and Meetups. My favorite text editor is atom (although emacs looks really cool), and my favorite place to study is the Xavier University Library. My strengths are:</p>
+		<p id="introParagraph">Welcome to my site! My name is Alexandre Korotkov, but everyone calls me Sasha. I moved to Cincinnati in September of 2016 and started learning programming that very same month. I am a self-taught developer. The main tools I use to help me learn are FreeCodeCamp, Podcasts, Udemy, and Meetups. My favorite text editor is atom (although emacs looks really cool), and my favorite place to study is the Xavier University Library. My traits and skills are:</p>
 		<ul id="skillList">
 			<li>Relentless desire to learn and grow.</li>
-			<li>Javascript, React.</li>
+			<li>Javascript, React, HTML, CSS, API's, testing.</li>
 			<li>Eager to discover new technologies and new ways of thinking.</li>
 			<li>Natural aptitude for finding hidden edge cases and thinking outside the box.</li>
 			<li>Enjoy pair programming with other up-and-coming developers.</li>		
@@ -472,19 +482,19 @@
 		<div id="projectwrap">
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-edit projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://timestamp-microservice2017.herokuapp.com><i class="fa fa-edit projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=https://timestamp-microservice2017.herokuapp.com/>Markdown Previewer</a>
+						<a class="projectLinks" target="_blank" href=https://timestamp-microservice2017.herokuapp.com/>Timestamp API</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-slack fa-rotate-18 projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/tic-tac-toe><i class="fa fa-slack fa-rotate-18 projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/tic-tac-toe/>Tic Tac Toe</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-hourglass-start projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/pomodoro><i class="fa fa-hourglass-start projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/pomodoro/>Pomodoro</a>
 					</figcaption>
@@ -492,19 +502,19 @@
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-file-video-o projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/twitch-stream><i class="fa fa-file-video-o projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/twitch-stream/>Twitch Streamers</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-fax projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/reactulator><i class="fa fa-fax projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/reactulator/>Reactulator</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-file-word-o projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/wikipedia_viewer><i class="fa fa-file-word-o projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/wikipedia_viewer/>Wikipedia Viewer</a>
 					</figcaption>
@@ -512,33 +522,33 @@
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-life-bouy fa-rotate-45 projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://sashakoro.github.io/Simon-Project><i class="fa fa-life-bouy fa-rotate-45 projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/Simon-Project/>Simon Game</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-id-badge projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=http://codepen.io/SashaK-/full/pNbBQR/><i class="fa fa-id-badge projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR/>Tribute Page</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-gears projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=http://codepen.io/SashaK-/full/LbbWom/><i class="fa fa-gears projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
+						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom/>Quote Machine</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div id="projectRowFour">
 				<figure id="cloudfig" class="projectcontainer">
-					<i class="fa fa-cloud projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://codepen.io/SashaK-/full/XNpYXM/><i class="fa fa-cloud projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
+						<a class="projectLinks" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM/>Weather App</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-calculator projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://sashakoro.github.io/calculator/><i class="fa fa-calculator projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
 					</figcaption>
@@ -549,15 +559,15 @@
 		<div id="hiddenprojects">
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-edit projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://timestamp-microservice2017.herokuapp.com><i class="fa fa-edit projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=https://timestamp-microservice2017.herokuapp.com/>Markdown Previewer</a>
+						<a class="projectLinks" target="_blank" href=https://timestamp-microservice2017.herokuapp.com/>Timestamp API</a>
 					</figcaption>
 				</figure>			
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-slack fa-rotate-18 projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/tic-tac-toe><i class="fa fa-slack fa-rotate-18 projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/tic-tac-toe/>Tic Tac Toe</a>
 					</figcaption>
@@ -565,7 +575,7 @@
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-hourglass-start projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/pomodoro><i class="fa fa-hourglass-start projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/pomodoro/>Pomodoro</a>
 					</figcaption>
@@ -573,7 +583,7 @@
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-file-video-o projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/twitch-stream><i class="fa fa-file-video-o projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/twitch-stream/>Twitch Streamers</a>
 					</figcaption>
@@ -581,7 +591,7 @@
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-fax projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/reactulator><i class="fa fa-fax projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/reactulator/>Reactulator</a>
 					</figcaption>
@@ -589,7 +599,7 @@
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-file-word-o projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://github.com/SashaKoro/wikipedia_viewer><i class="fa fa-file-word-o projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/wikipedia_viewer/>Wikipedia Viewer</a>
 					</figcaption>
@@ -597,39 +607,39 @@
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-life-bouy fa-rotate-45 projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://sashakoro.github.io/Simon-Project><i class="fa fa-life-bouy fa-rotate-45 projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/Simon-Project/>Simon Game</a>
 					</figcaption>
 				</figure>				
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-id-badge projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=http://codepen.io/SashaK-/full/pNbBQR/><i class="fa fa-id-badge projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR/>Tribute Page</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-gears projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=http://codepen.io/SashaK-/full/LbbWom/><i class="fa fa-gears projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
+						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom/>Quote Machine</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div>
 				<figure id="cloudfig" class="projectcontainer">
-					<i class="fa fa-cloud projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://codepen.io/SashaK-/full/XNpYXM/><i class="fa fa-cloud projectIcons"></i></a>
 					<figcaption>
-						<a class="projectLinks" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
+						<a class="projectLinks" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM/>Weather App</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div>
 				<figure id="lastfig" class="projectcontainer">
-					<i class="fa fa-calculator projectIcons"></i>
+					<a target="_blank" class="iconLinks" href=https://sashakoro.github.io/calculator/><i class="fa fa-calculator projectIcons"></i></a>
 					<figcaption>
 						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
 					</figcaption>
