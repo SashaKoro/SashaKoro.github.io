@@ -35,7 +35,7 @@
 			.page-wrap {
 				flex: 1;
 			}
-			.toggled:not(#about) {
+			.toggled:not(#projects) {
     			display: none;
 			}
 			.toggled {
@@ -152,29 +152,21 @@
 			#projectHeader {
 				padding-bottom: 100px;
 			}
-			#projectRowTwo {
-				margin-top: 30px;
+			#projectRowFour {
 				margin-bottom: 75px;
 			}
-			.fa-calculator {
-				font-size: 220px;
-			}
-			.fa-id-badge {
-				font-size: 220px;
-				margin-left: 70px;
-				margin-right: 70px;
-			}
-			.fa-gears {
-				font-size: 220px;
-			}
-			.fa-cloud {
+			.projectIcons {
 				font-size: 220px;
 			}
 			#cloudfig {
-				margin-right: 80px;
+				margin-right: 50px;
 			}
-			.fa-life-bouy {
-				font-size: 200px;
+			.fa-rotate-18 {
+			    -webkit-transform: rotate(18deg);
+			    -moz-transform: rotate(18deg);
+			    -ms-transform: rotate(18deg);
+			    -o-transform: rotate(18deg);
+			    transform: rotate(18deg);				
 			}
 			.fa-rotate-45 {
 			    -webkit-transform: rotate(45deg);
@@ -183,69 +175,19 @@
 			    -o-transform: rotate(45deg);
 			    transform: rotate(45deg);
 			}			
-			#calcLink {
+			.projectLinks {
+				font-size: 22px;
 				color: black;
 				text-decoration: none;
 				line-height: 75px;
 			}
-			#eulerLink {
-				color: black;
-				text-decoration: none;
-				line-height: 75px;
-			}
-			#quoteLink {
-				color: black;
-				text-decoration: none;
-				line-height: 75px;
-			}
-			#weatherLink {
-				color: black;
-				text-decoration: none;
-			}
-			#simonLink {
-				color: black;
-				text-decoration: none;
-				line-height: 75px;
-			}
-			#calcLink:hover {
+			.projectLinks:hover {
 				text-decoration: underline;
 				color: #373D3F;
 			}
-			#calcLink:focus {
+			.projectLinks:focus {
 				text-decoration: underline;
 				outline-style: none;
-			}
-			#eulerLink:hover {
-				text-decoration: underline;
-				color: #373D3F;
-			}
-			#eulerLink:focus {
-				text-decoration: underline;
-				outline-style: none;
-			}
-			#quoteLink:hover {
-				text-decoration: underline;
-				color: #373D3F;
-			}
-			#quoteLink:focus {
-				text-decoration: underline;
-				outline-style: none;
-			}		
-			#weatherLink:hover {
-				text-decoration: underline;
-				color: #373D3F;				
-			}	
-			#weatherLink:focus {
-				text-decoration: underline;
-				outline-style: none;				
-			}
-			#simonLink:hover {
-				text-decoration: underline;
-				color: #373D3F;			
-			}
-			#simonLink:focus {
-				text-decoration: underline;
-				outline-style: none;					
 			}
 			#lastfig {
 				margin-bottom: 60px;
@@ -256,7 +198,6 @@
 				font-size: 25px;
 				padding-bottom: 75px;
 				padding-top: 140px;
-				background-color: white;
 				height: 100%;
 				color: #555F61;
 			}	
@@ -285,42 +226,17 @@
     				padding-left: 12%;
 					padding-right: 12%;
 				}
-				.fa-id-badge {
-					margin-left: 40px;
-					margin-right: 40px;
-				}
 			}
 			@media only screen and (max-width: 950px) {
     			#logo {
     				margin-right: 25%;
     			}
-    		    #blog {
-    				padding-left: 9%;
-					padding-right: 9%;
-				}	
 				#projectHeader {
 					font-size: 32px;
-				}					
-				.fa-calculator {
+				}		
+				.projectIcons {
 					font-size: 160px;
-				}
-				.fa-id-badge {
-					font-size: 160px;
-					margin-left: 0px;
-					margin-right: 0px;
-				}
-				.fa-gears {
-					font-size: 160px;
-				}
-				.fa-cloud {
-					font-size: 160px;
-				}	
-				#cloudfig {
-					margin-right: 50px;
-				}
-				.fa-life-bouy {
-					font-size: 160px;
-				}	
+				}			
 				.projectcontainer {
 					font-size: 17px;
 				}	
@@ -355,25 +271,10 @@
 				#hiddenprojects {
 					display: block;
 				}	
-				.fa-calculator {
-					font-size: 220px;
-				}
-				.fa-id-badge {
+				.projectIcons {
 					font-size: 220px;
 					margin-top: 30px;
-				}
-				.fa-gears {
-					font-size: 220px;
-					margin-top: 30px;
-				}
-				.fa-cloud {
-					font-size: 220px;
-					margin-top: 30px;
-				}
-				.fa-life-bouy {
-					font-size: 220px;
-					margin-top: 30px;
-				}	
+				}		
 				.projectcontainer {
 					font-size: 20px;
 				}	 			
@@ -387,8 +288,6 @@
     				width: 90px;
     			}
       		    #blog {
-    				padding-left: 7%;
-					padding-right: 7%;
 					font-size: 18px;
 				}	 
 				#introParagraph {
@@ -405,6 +304,7 @@
 				}	
 				#projectHeader {
 					font-size: 24px;
+					padding-bottom: 30px;
 				}	
 				#blogHeader {
 					padding-top: 25px;
@@ -442,7 +342,6 @@
 					margin-right: 5%;
 					margin-bottom: 40px;
 				}
-
 				#introHeader {
 					text-align: center;
 					font-size: 24px;
@@ -453,31 +352,15 @@
 					margin-right: 6%;
 					margin-bottom: 50px;
 				}	
-				.fa-calculator {
+				.projectIcons {
 					font-size: 200px;
 				}
-				.fa-id-badge {
-					font-size: 200px;
-				}
-				.fa-gears {
-					font-size: 200px;
-				}
-				.fa-cloud {
-					font-size: 200px;
-				}
-				.fa-life-bouy {
-					font-size: 200px;
-				}  	
 				#projects {
 					padding-top: 100px;
 				}					
-				#projectHeader {
-					padding-bottom: 50px;
-				}
 				#ProjectsButton {
 					text-align: left;
 				}
-
       		    #blog {
 					font-size: 16px;
 				}				
@@ -495,39 +378,17 @@
 					display: block;
 				}
 			}	
-		@media only screen and (max-width: 370px) {
-
-				#header {
-					height: 60px;
-				}				
+			@media only screen and (max-width: 370px) {			
 			    #logo {
     				margin-right: 1%;
     				margin-left: 1%;
     			}
     			.headerButtons {
     				width: 68px;
-    				font-size: 15px;
-    				margin-top: 15px;
     			} 
     			#self {
 					float: left;
 				}
-				#introParagraph {
-					margin-left: 4%;
-					margin-right: 4%;
-				}	
-
-				#projectHeader {
-					font-size: 24px;
-				}	  	
-				#ProjectsButton {
-					text-align: left;
-				}
-
-				#blogDate {
-					padding-top: 50px;
-					padding-bottom: 15px;
-				}	
 			}	
 			@media only screen and (max-height: 800px) {
 				#blogHeader {
@@ -555,7 +416,6 @@
 					width: 105px;
 					max-width: 120px;
 				}
-
 				#projects {
 					padding-top: 65px;
 				}
@@ -565,7 +425,6 @@
 				#blogHeader {
 					padding-top: 0px;
 				}
-
 				#blog {
 					padding-top: 80px;
 					font-size: 18px;
@@ -577,12 +436,10 @@
 				.site-footer {
 					display: none;
 				}
-
 				.smallfooter {
 					display: block;
 				}
 			}
-
 		</style>
 	</head>
 <body>
@@ -600,13 +457,13 @@
   			<figcaption></figcaption>
   		</figure>
   		<h1 id="introHeader">Alexandre Korotkov (Sasha)</h1>
-		<p id="introParagraph">Welcome to my site! My name is Alexandre Korotkov, but everyone calls me Sasha. I moved to Cincinnati in September of 2016 and started learning programming that very same month. I am a self-taught developer. The main tools I use to help me learn are FreeCodeCamp, Podcasts, Project Euler, Meetups, and paired programming. My favorite text editor is sublime(although emacs looks really cool), and my favorite place to study is the Xavier University Library. My strengths are:</p>
+		<p id="introParagraph">Welcome to my site! My name is Alexandre Korotkov, but everyone calls me Sasha. I moved to Cincinnati in September of 2016 and started learning programming that very same month. I am a self-taught developer. The main tools I use to help me learn are FreeCodeCamp, Podcasts, Udemy, and Meetups. My favorite text editor is atom (although emacs looks really cool), and my favorite place to study is the Xavier University Library. My strengths are:</p>
 		<ul id="skillList">
 			<li>Relentless desire to learn and grow.</li>
-			<li>Javascript, Python, HTML, CSS, Jquery, Unit testing, API's.</li>
+			<li>Javascript, React.</li>
 			<li>Eager to discover new technologies and new ways of thinking.</li>
 			<li>Natural aptitude for finding hidden edge cases and thinking outside the box.</li>
-			<li>Enjoy pair programming with and mentoring other up-and-coming programmers.</li>		
+			<li>Enjoy pair programming with other up-and-coming developers.</li>		
 		</ul>
 	</div>
 
@@ -615,77 +472,166 @@
 		<div id="projectwrap">
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-calculator"></i>
+					<i class="fa fa-edit projectIcons"></i>
 					<figcaption>
-						<a id="calcLink" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
+						<a class="projectLinks" target="_blank" href=https://timestamp-microservice2017.herokuapp.com/>Markdown Previewer</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-id-badge"></i>
+					<i class="fa fa-slack fa-rotate-18 projectIcons"></i>
 					<figcaption>
-						<a id="eulerLink" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/tic-tac-toe/>Tic Tac Toe</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-gears"></i>
+					<i class="fa fa-hourglass-start projectIcons"></i>
 					<figcaption>
-						<a id="quoteLink" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/pomodoro/>Pomodoro</a>
 					</figcaption>
 				</figure>
 			</div>
-			<div id="projectRowTwo">
-				<figure id="cloudfig" class="projectcontainer">
-					<i class="fa fa-cloud"></i>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-file-video-o projectIcons"></i>
 					<figcaption>
-						<a id="weatherLink" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/twitch-stream/>Twitch Streamers</a>
 					</figcaption>
 				</figure>
 				<figure class="projectcontainer">
-					<i class="fa fa-life-bouy fa-rotate-45"></i>
+					<i class="fa fa-fax projectIcons"></i>
 					<figcaption>
-						<a id="simonLink" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/reactulator/>Reactulator</a>
+					</figcaption>
+				</figure>
+				<figure class="projectcontainer">
+					<i class="fa fa-file-word-o projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/wikipedia_viewer/>Wikipedia Viewer</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-life-bouy fa-rotate-45 projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+					</figcaption>
+				</figure>
+				<figure class="projectcontainer">
+					<i class="fa fa-id-badge projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+					</figcaption>
+				</figure>
+				<figure class="projectcontainer">
+					<i class="fa fa-gears projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div id="projectRowFour">
+				<figure id="cloudfig" class="projectcontainer">
+					<i class="fa fa-cloud projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
+					</figcaption>
+				</figure>
+				<figure class="projectcontainer">
+					<i class="fa fa-calculator projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
 					</figcaption>
 				</figure>
 			</div>
 		</div>
+
 		<div id="hiddenprojects">
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-calculator"></i>
+					<i class="fa fa-edit projectIcons"></i>
 					<figcaption>
-						<a id="calcLink" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
+						<a class="projectLinks" target="_blank" href=https://timestamp-microservice2017.herokuapp.com/>Markdown Previewer</a>
+					</figcaption>
+				</figure>			
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-slack fa-rotate-18 projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/tic-tac-toe/>Tic Tac Toe</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-id-badge"></i>
+					<i class="fa fa-hourglass-start projectIcons"></i>
 					<figcaption>
-						<a id="eulerLink" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/pomodoro/>Pomodoro</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div>
 				<figure class="projectcontainer">
-					<i class="fa fa-gears"></i>
+					<i class="fa fa-file-video-o projectIcons"></i>
 					<figcaption>
-						<a id="quoteLink" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/twitch-stream/>Twitch Streamers</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-fax projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/reactulator/>Reactulator</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-file-word-o projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=https://github.com/SashaKoro/wikipedia_viewer/>Wikipedia Viewer</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-life-bouy fa-rotate-45 projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+					</figcaption>
+				</figure>				
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-id-badge projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/pNbBQR//>Tribute Page</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure class="projectcontainer">
+					<i class="fa fa-gears projectIcons"></i>
+					<figcaption>
+						<a class="projectLinks" target="_blank" href=http://codepen.io/SashaK-/full/LbbWom//>Quote Machine</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div>
 				<figure id="cloudfig" class="projectcontainer">
-					<i class="fa fa-cloud"></i>
+					<i class="fa fa-cloud projectIcons"></i>
 					<figcaption>
-						<a id="weatherLink" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
+						<a class="projectLinks" target="_blank" href=https://codepen.io/SashaK-/full/XNpYXM//>Weather App</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div>
 				<figure id="lastfig" class="projectcontainer">
-					<i class="fa fa-life-bouy fa-rotate-45"></i>
+					<i class="fa fa-calculator projectIcons"></i>
 					<figcaption>
-						<a id="simonLink" target="_blank" href=https://sashakoro.github.io/Simon-Project//>Simon Game</a>
+						<a class="projectLinks" target="_blank" href=https://sashakoro.github.io/calculator/>Calculator + Frankulator</a>
 					</figcaption>
 				</figure>
 			</div>
@@ -734,7 +680,6 @@
     </p>
 </div>
 
-    <script src="jsback.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
 
