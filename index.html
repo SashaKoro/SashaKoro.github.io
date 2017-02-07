@@ -22,21 +22,13 @@
 				display: flex;
 				flex-direction: column;
 				width: auto;
-    			overflow-x:scroll;
-			}
-			button:focus {
-				outline-color: black;
-				outline-style: solid;
-				outline-width: 2px;
-				transition-duration: 0s;
-				-webkit-transition-duration: 0s;
-				background-color: #1287A8;
+    		overflow-x:scroll;
 			}
 			.page-wrap {
 				flex: 1;
 			}
 			.toggled:not(#about) {
-    			display: none;
+    		display: none;
 			}
 			.toggled {
 				font-family: arial;
@@ -63,10 +55,8 @@
 				margin-right: 9px;
 				height: 40px;
 				width: 120px;
-				max-width: 120px;
 				font-family: Arial;
-				font-size: 19px;
-				color: black;
+				font-size: 20px;
 				border: 1px solid black;
 				background-color: #43ABC9;
 				transition-duration: 0.6s;
@@ -75,6 +65,12 @@
 			}
 			.headerButtons:hover {
 				background-color: white;
+				cursor: pointer;
+			}
+			.headerButtons:focus {
+				outline: 2px solid black;
+				transition-duration: 0s;
+				-webkit-transition-duration: 0s;
 			}
 			#about {
 				padding-top: 150px;
@@ -104,18 +100,18 @@
 				margin-left: 11%;
 			}
 			li {
-   				margin:0 0 20px 0;
+   			margin:0 0 20px 0;
 			}
 			.site-footer {
 				height: 70px;
-  				background: #555F61;
-  				width: 100%;
+  			background: #555F61;
+  			width: 100%;
 			}
 			.smallfooter {
 				height: 51px;
-  				background: #555F61;
-  				width: 100%;
-  				display: none;
+				background: #555F61;
+				width: 100%;
+				display: none;
 			}
 			.contactListDiv {
 				text-align: center;
@@ -169,18 +165,18 @@
 				color: #666F70;
 			}
 			.fa-rotate-18 {
-			    -webkit-transform: rotate(18deg);
-			    -moz-transform: rotate(18deg);
-			    -ms-transform: rotate(18deg);
-			    -o-transform: rotate(18deg);
-			    transform: rotate(18deg);
+		    -webkit-transform: rotate(18deg);
+		    -moz-transform: rotate(18deg);
+		    -ms-transform: rotate(18deg);
+		    -o-transform: rotate(18deg);
+		    transform: rotate(18deg);
 			}
 			.fa-rotate-45 {
-			    -webkit-transform: rotate(45deg);
-			    -moz-transform: rotate(45deg);
-			    -ms-transform: rotate(45deg);
-			    -o-transform: rotate(45deg);
-			    transform: rotate(45deg);
+		    -webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    transform: rotate(45deg);
 			}
 			.projectLinks {
 				font-size: 22px;
@@ -217,7 +213,7 @@
 				padding-bottom: 25px;
 			}
 			p:first-letter {
-    			margin-left: 3em;
+    		margin-left: 3em;
 			}
 			p {
 				line-height: 140%;
@@ -226,18 +222,18 @@
 				margin: 0 10px 0 10px;
 			}
 			@media only screen and (max-width: 1200px) {
-    			#logo {
-    				margin-right: 40%;
+    		#logo {
+    			margin-right: 40%;
     			}
-    			#blog {
-    				padding-left: 12%;
+    		#blog {
+    			padding-left: 12%;
 					padding-right: 12%;
 				}
 			}
 			@media only screen and (max-width: 950px) {
-    			#logo {
-    				margin-right: 25%;
-    			}
+    		#logo {
+    			margin-right: 25%;
+    		}
 				#projectHeader {
 					font-size: 32px;
 				}
@@ -249,14 +245,14 @@
 				}
 			}
 			@media only screen and (max-width: 720px) {
-    			#logo {
-    				margin-right: 12%;
-    			}
-    			.headerButtons {
-    				width: 105px;
-    			}
-     		    #blog {
-    				padding-left: 7%;
+  			#logo {
+  				margin-right: 12%;
+  			}
+  			.headerButtons {
+  				width: 105px;
+  			}
+   		  #blog {
+  				padding-left: 7%;
 					padding-right: 7%;
 					font-size: 20px;
 				}
@@ -287,14 +283,14 @@
 				}
 			}
 			@media only screen and (max-width: 550px) {
-    			#logo {
-    				margin-right: 1%;
-    				margin-left: 1%;
-    			}
-    			.headerButtons {
-    				width: 90px;
-    			}
-      		    #blog {
+    		#logo {
+    			margin-right: 1%;
+    			margin-left: 1%;
+    		}
+  			.headerButtons {
+  				width: 90px;
+  			}
+      	#blog {
 					font-size: 18px;
 				}
 				#self {
@@ -331,20 +327,20 @@
 				#header {
 					height: 60px;
 				}
-    			#logo {
-    				margin-right: 4%;
-    				margin-left: 4%;
-  					border-top: 20px solid #1496BB;
+    		#logo {
+    			margin-right: 4%;
+    			margin-left: 4%;
+  				border-top: 20px solid #1496BB;
 					border-right: 20px solid #F26D21;
 					border-left: 20px solid #F26D21;
 					border-bottom: 10px solid transparent;
-    			}
-    			.headerButtons {
-    				width: 80px;
-    				font-size: 15px;
-    				margin-top: 15px;
-    			}
-    			#about {
+    		}
+  			.headerButtons {
+  				width: 80px;
+  				font-size: 15px;
+  				margin-top: 15px;
+  			}
+    		#about {
 					padding-top: 80px;
 				}
 				#introParagraph {
@@ -389,13 +385,13 @@
 				}
 			}
 			@media only screen and (max-width: 370px) {
-			    #logo {
-    				margin-right: 1%;
-    				margin-left: 1%;
-    			}
-    			.headerButtons {
-    				width: 68px;
-    			}
+		    #logo {
+  				margin-right: 1%;
+  				margin-left: 1%;
+  			}
+  			.headerButtons {
+  				width: 68px;
+  			}
 			}
 			@media only screen and (max-height: 800px) {
 				#blogHeader {
@@ -661,6 +657,8 @@
 
 	<div class="toggled" id="blog">
 		<h1 id="blogHeader">Welcome to my blog!</h1>
+		<h3 class="blogDate">February 7, 2017</h3>
+		<p>Now for an update. I have completed the Front End Development track for Free Code Camp! I actually finished it two weeks ago. The last three projects pretty much built themselves, with the most difficult part being the Tic Tac Toe game. I don’t think I would have been able to build them so quickly if I had not been using React. Just by being aware of what my ‘state’ was and holding all of it in one React Class I was able to reason about my projects easily and build them up very quickly. I have also started using Enzyme to test my React components and it has proven very effective. I discovered the airbnb style guide on GitHub and I have made use of that as well, making my code more readable and maintainable in the process. (Work in progress still…)</p><br><p>Since finishing the Front End course I have begun learning Node, Express and Mongodb. I have built out some extremely rudimentary API’s for FCC using the new tech, although I know I am just scratching the surface. The real challenge will be in creating the dynamic web application projects on the FCC Back End track. I hope to tackle those soon, as I improve my skills in React and learn to integrate it with Node and Mongodb. I also plan on taking some extra time to improve my knowledge of CSS, as I find that I rely too much on trial and error style creation.</p><br><p>Last week I had the opportunity to attend my first Hackathon! It was quite a learning experience for me because I ended up being quite unprepared. The Hackathon begun on Friday evening at 4pm and by that time I was already feeling tired (not a good sign!). I had woken up at 6:30am and did not get a great nights sleep. For my next one, I definitely plan to sleep in and maybe even take a nap in the afternoon before showing up to make sure I am full of energy. The next issue: I was unprepared to tackle the challenges presented at the Hackathon. I did not look over the sample API’s I might be using, I did not research the possible libraries I might want to use. This combined with being tired meant I did not make a big contribution, thought I did learn a bit about SQL queries, kali, and data visualization tools such as Tableau. I am quite happy that I attended however, because I know exactly the changes I need to make in order to have a better experience for my second Hackathon.</p><br><p>Book recommendation: Apprenticeship Patterns by David H. Hoover and Adewale Oshineye. This book is free online, although you can make a purchase to support the authors! This book is about becoming a software craftsman, and gives great advice on navigating that journey and its possible ruts or pitfalls. The patterns in the book that I have found to be most relevant to me as a self-taught learner are: ‘Your First Language’, ‘Expand Your Bandwidth’, and ‘Share What You Learn’.</p>
 		<h3 class="blogDate">January 16, 2017</h3>
 		<p>It’s been a while! Let this be the first blog post of the new year. The last two weeks have gone really well, I have finished rebuilding my Calc/Frankulator using React and while it looks the same on the outside, it is quite different when you look at the code. The new version has a modular design with dozens of different files containing different functions, tests, and components. I have used a CSS library called ‘styled components’ to style the app, and now the CSS for each component lives right in the components’ respective file as opposed to one long stylesheet. ES6 syntax has served me well in creating the project as arrow functions and de-structuring has allowed me to be more concise in my code. Template strings, while requiring a bit more code sometimes, help differentiate when I am actually adding variables together and when I am doing string concatenation. Variable names have been changed from the unintelligible “x” and “y’s” to ‘inputNum’ and ‘potentialDivisor’ and many more. I didn’t quite realize how difficult my code was to understand until I had gone back to it myself after a month since last seeing it. I have noticed myself having quite a lot of fun looking at my old code and trying to spruce it up with ES6 and increased readability. I have gone to some of my completed Free Code Camp Algorithm challenges and rewrote them, in some cases I was able to more than half the number of lines of code I had previously used!</p><br><p>Speaking of FCC, just earlier today, I have finished solving all of the Algorithm challenges, and now I only have to complete 3 more projects (twitch API, Pomodoro Clock and Tic Tac Toe) to earn my Front End Development Certificate. My goal is to use React in building each project, and to have them all done in the next 3 weeks. I’m planning to save the Tic Tac Toe project for last because I think it will be the most challenging, not only in terms of state changes but also in programming the ‘AI’ for the computer opponent. I think finishing the course will give me a big confidence boost for tackling the data visualization and back end projects. (I’m looking at you Game of Life) Part of me is a bit sad though, no more FCC algorithm challenges!  I will have to revisited them in a year or two, once I have forgotten the answers and then see if I can solve each of them in one line of code.</p><br><p>For this blog post I also have a book recommendation. How to Stop Worrying and Start Living by Dale Carnegie. I have had this book for a while now but I have never went too far into it, until last week when I caught myself worrying quite a bit on whether I should attend an upcoming coding bootcamp or continuing to study on my own. The book offered some excellent perspective and a plethora of stories from people who’s past troubles will make mine or yours seem like an afternoon picnic.</p>
 		<h3 class="blogDate">December 29, 2016</h3>
